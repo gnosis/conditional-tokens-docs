@@ -11,6 +11,7 @@ cache:
   directories:
   - "$HOME/.npm"
 install:
+  - yarn install
   - cd website
   - yarn install
   - cd ..
