@@ -8,8 +8,7 @@ before_install:
   - sudo apt-get -y install python-pip python-dev
   - pip install awscli --upgrade --user
 cache:
-  directories:
-  - "$HOME/.npm"
+  yarn: true
 install:
   - yarn install
   - cd website
@@ -25,7 +24,7 @@ matrix:
     node_js: '12'
 before_script:
   - cd website
-  - yarn build
+  - yarn run build
   - cd ..
 
 script:
