@@ -24,7 +24,7 @@ matrix:
     node_js: '12'
 before_script:
   - cd website
-  - docusaurus-build
+  - npx docusaurus-build
   - cd ..
 
 script:
