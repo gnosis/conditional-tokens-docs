@@ -12,7 +12,7 @@ cache:
   - "$HOME/.npm"
 install:
   - cd website
-  - yarn
+  - yarn install
   - cd ..
 matrix:
   include:
