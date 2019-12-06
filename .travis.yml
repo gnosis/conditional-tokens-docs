@@ -11,7 +11,7 @@ cache:
   directories:
   - "$HOME/.npm"
 install:
-  - yarn i
+  - yarn
 matrix:
   include:
   - if: branch =~ /^master$/ OR tag IS present
