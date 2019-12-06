@@ -17,16 +17,14 @@ install:
 matrix:
   include:
   - if: branch =~ /^master$/ OR tag IS present
-    env: NODE_ENV=production
+    env: NODE_ENV=development
     node_js: '12'
   - if: NOT (branch =~ /^master$/) AND NOT (tag IS present)
     env: NODE_ENV=development
     node_js: '12'
 before_script:
   - cd website
-  - ls
-  - ls node_modules/.bin
-  - npx docusaurus-build
+  - yarn build
   - cd ..
 
 script:
