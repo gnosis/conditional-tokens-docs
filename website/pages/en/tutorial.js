@@ -12,25 +12,27 @@ const CompLibrary = require('../../core/CompLibrary.js');
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-function Help(props) {
+function Tutorial(props) {
   const {config: siteConfig, language = ''} = props;
   const {baseUrl, docsUrl} = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
   const langPart = `${language ? `${language}/` : ''}`;
   const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
-  const supportLinks = [
+  const tutorialLinks = [
     {
-      content: 'How CT can be used to make Trades under certain Conditions',
-      title: 'Conditional Trades',
+      content: `Set up everything to build your [Prediction Market](${docUrl(
+        'doc5.html',
+      )})`,
+      title: 'Get Started',
     },
     {
-      content: 'Make decission based on prediction markets',
-      title: 'Futarchy',
+      content: 'Build a Prediction Market in 30 min',
+      title: 'Template Tutorial',
     },
     {
-      content: "How can Conditional Tokens be used for Games",
-      title: 'Games',
+      content: "Use Conditional Tokens to build a game",
+      title: 'Game Tutorial',
     },
   ];
 
@@ -39,14 +41,14 @@ function Help(props) {
       <Container className="mainContainer documentContainer postContainer">
         <div className="post">
           <header className="postHeader">
-            <h1>Conditional Token Use Cases</h1>
+            <h1>Tutorials</h1>
           </header>
-          <p>Learn about the different Use Cases of Conditional Tokens.</p>
-          <GridBlock contents={supportLinks} layout="threeColumn" />
+          <p>OK, enough about contracts and the many futures of conditional tokens. Let’s start building it already!</p>
+          <GridBlock contents={tutorialLinks} layout="threeColumn" />
         </div>
       </Container>
     </div>
   );
 }
 
-module.exports = Help;
+module.exports = Tutorial;

@@ -37,7 +37,7 @@ class HomeSplash extends React.Component {
 
     const ProjectTitle = () => (
       <h2 className="projectTitle">
-        {siteConfig.title}
+        Conditional Tokens
         <small>{siteConfig.tagline}</small>
       </h2>
     );
@@ -60,14 +60,9 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <Logo img_src={`${baseUrl}img/gnosis_logo_blue.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
-          </PromoSection>
         </div>
       </SplashContainer>
     );
@@ -91,74 +86,74 @@ class Index extends React.Component {
         />
       </Container>
     );
-
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
+const TryOut = () => (
       <Block id="try">
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+              'Insert short description ',
+            image: `${baseUrl}img/undraw_searching.svg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'What are Conditional Tokens',
           },
         ]}
       </Block>
     );
 
     const Description = () => (
-      <Block background="dark">
+      <Block background="light">
         {[
           {
             content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
+              'Reach out to us!',
+            image: `${baseUrl}img/undraw_contact_us.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Support and Community',
           },
         ]}
       </Block>
     );
 
     const LearnHow = () => (
-      <Block background="light">
+      <Block background="dark">
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              'This developer portal will teach you what the conditional tokens standard is; discuss various ways in which it can be used to improve your decentralized application; show you how to encode conditionality so that you can plug into and create liquid prediction markets of your own; provide you with some basic tutorials for getting started with this standard and its many use cases; and connect you to the community of developers working with it.',
+            image: `${baseUrl}img/gnosis_logo_white.png`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: 'About',
           },
         ]}
       </Block>
     );
 
     const Features = () => (
-      <Block layout="fourColumn">
+      <Block background="light" layout="sixColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
+            content: 'A short primer on Conditonal Tokens',
+            title: 'Introduction',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
+            content: 'Explore the versatility of Conditonal Tokens',
+            title: 'Use Cases',
+          },
+          {
+            content: 'Deep Dive into the Conditional Token Contracts',
+            title: 'Documentation',
+          },
+          {
+            content: 'Get started and build your Conditional Token Dapp',
+            title: 'Tutorials',
+          },
+          {
+            content: 'Need some help? Reach out to us!',
+            title: 'Support',
+          },
+          {
+            content: 'Explore existing Conditional Token applications',
+            title: 'Projects',
           },
         ]}
       </Block>
@@ -181,7 +176,7 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
+          <h2>Projects using Conditional Tokens</h2>
           <p>This project is used by all these people</p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
@@ -198,7 +193,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
+          
           <LearnHow />
           <TryOut />
           <Description />

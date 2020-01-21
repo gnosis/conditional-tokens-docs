@@ -21,3 +21,20 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+.homeContainer .homeWrapper .projectLogo img{
+	width: 25%;
+	height: 50%;
+}
+  
+.homeContainer .homeWrapper .projectLogo {
+   /*height: 100px;*/
+   /*margin-bottom: 0px;*/
+   display: block;
+   position: inherit;
+   padding: unset;
+}
+
+.navigationSlider .slidingNav ul li a , .fixedHeaderContainer header .headerTitleWithLogo , .projectTitle{
+	color: #001428;
+}

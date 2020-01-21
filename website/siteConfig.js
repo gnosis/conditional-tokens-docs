@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'Gnosis Developer Portal', // Title for your website.
+  tagline: 'Create conditional tokens, a new asset class with richer informational capabilities that makes the outcome of any future event tradable.',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -39,8 +39,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
+    {page: 'help', label: 'Use Cases'},
+    {page: 'tutorial', label: 'Tutorial'},
     {blog: true, label: 'Blog'},
   ],
 
@@ -48,14 +48,15 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/gnosis_logo_blue.png',
+  footerIcon: 'img/gnosis_logo_white.png',
+  favicon: 'img/gnosis_logo_blue.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#3a7049',
-    secondaryColor: '#284e33',
+    primaryColor: '#009cb4',
+    secondaryColor: '#001428'
+    ,
   },
 
   /* Custom fonts for website */
@@ -73,7 +74,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Gnosis LTD`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.

@@ -1,7 +1,11 @@
 ---
 id: doc2
-title: document number 2
+title: Use Cases
 ---
+## Weather prediction market
+## Bounty incentive
+## Futarchy
+## Conditional trades
+### Multi-layered prediction markets for politics
+## Games
 
-This is a link to [another document.](doc3.md)  
-This is a link to an [external page.](http://www.example.com)
