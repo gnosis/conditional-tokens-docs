@@ -7,6 +7,48 @@
  
 /* your custom css */
 
+@font-face {
+   font-family: "Averta";
+   font-style: normal;
+   font-display: swap;
+   src: local("Averta-Regular"), url('/fonts/averta-regular.ttf') format('truetype');
+ }
+
+ @font-face {
+   font-family: 'Averta-Extra-Bold';
+   font-style: normal;
+   font-display: swap;
+   src: local("Averta-Extrabold"), url('/fonts/averta-extra-bold.ttf') format('truetype');
+ }
+
+ body {
+   font-family: "Averta", sans-serif;
+   overflow-x: hidden;
+   background-color: #f3f2f2;
+ }
+
+.fixedHeaderContainer{
+   position: initial;
+   background-color: transparent;
+   padding: 31px;
+}
+
+.fixedHeaderContainer a{
+   height: 50px;
+   flex-grow: 4;
+}
+
+.navigationWrapper{
+   flex-grow: 5;
+}
+
+.headerTitleWithLogo{
+   color: #009cb4;
+   font-family: "Averta";
+   font-size: 1rem !important;
+   width: 14rem;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
@@ -35,6 +77,35 @@
    padding: unset;
 }
 
-.navigationSlider .slidingNav ul li a , .fixedHeaderContainer header .headerTitleWithLogo , .projectTitle{
+.navigationSlider .slidingNav ul li a , .fixedHeaderContainer , .projectTitle{
 	color: #001428;
+}
+
+.navigationSlider .slidingNav ul li a{
+   font-size: 0.8rem;
+   font-family: "Averta-Extra-Bold";
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: 0.33px;
+}
+
+.nav-footer{
+   border-top: solid 2px #d8d8d8;
+   background-color: transparent;
+   color: #f3f2f2;
+}
+
+.nav-footer .sitemap h5{
+   font-family: "Averta-Extra-Bold";
+   color: #001428;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: 0.05rem;
+   font-size: 0.8rem;
+}
+
+.nav-footer .sitemap a{
+   color: #001428;
 }

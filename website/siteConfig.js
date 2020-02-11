@@ -10,46 +10,45 @@
 
 // List of projects/orgs using your project for the users page.
 const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
+  // {
+  //   caption: 'User1',
+  //   // You will need to prepend the image path with your baseUrl
+  //   // if it is not '/', like: '/test-site/img/image.jpg'.
+  //   image: '/img/undraw_open_source.svg',
+  //   infoLink: 'https://www.facebook.com',
+  //   pinned: true,
+  // },
 ];
 
 const siteConfig = {
-  title: 'Gnosis Developer Portal', // Title for your website.
+  title: 'Gnosis Developer Portal Conditional Tokens', // Title for your website.
   tagline: 'Create conditional tokens, a new asset class with richer informational capabilities that makes the outcome of any future event tradable.',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  url: 'https://docs.gnosis.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
+  projectName: 'gnosis-docs',
+  organizationName: 'gnosis',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {page: 'help', label: 'Use Cases'},
-    {page: 'tutorial', label: 'Tutorial'},
-    {blog: true, label: 'Blog'},
+    {page: 'help', label: 'Introduction'},
+    {page: 'help', label: 'Use Case'},
+    {page: 'users', label: 'Docs'},
+    {href: "https://google.com", label: 'Support'},
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/gnosis_logo_blue.png',
-  footerIcon: 'img/gnosis_logo_white.png',
+  headerIcon: 'img/conditional_tokens_logo_blue.svg',
   favicon: 'img/gnosis_logo_blue.png',
 
   /* Colors for website */
