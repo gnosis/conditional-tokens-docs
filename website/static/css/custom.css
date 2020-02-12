@@ -15,6 +15,13 @@
  }
 
  @font-face {
+   font-family: 'Averta-Bold';
+   font-style: normal;
+   font-display: swap;
+   src: local("Averta-Bold"), url('/fonts/averta-bold.ttf') format('truetype');
+ }
+
+ @font-face {
    font-family: 'Averta-Extra-Bold';
    font-style: normal;
    font-display: swap;
@@ -108,4 +115,21 @@
 
 .nav-footer .sitemap a{
    color: #001428;
+}
+
+.index-info-block-title{
+   font-family: "Averta-Extra-Bold";
+   font-size: 2rem;
+   letter-spacing: 0.15rem;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+}
+
+.index-info-block-text{
+   font-size: 1rem;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
 }

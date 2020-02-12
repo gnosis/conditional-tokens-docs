@@ -31,8 +31,14 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <div className="inner">
-          Hello World
+        <div className="inner index-info-block">
+          <div 
+          className="index-info-block-title">
+            Create conditional tokens, a new asset class with richer informational capabilities that makes the outcome of any future event tradable."
+          </div>
+          <div className="index-info-block-text">
+          This developer portal aims to provide an overview of the conditional tokens standard.  It is a place to explore the various use cases for conditional tokens, as well as detailed tutorials on how to encode conditionality and liquidity into your own dapps and prediction markets."
+          </div>
         </div>
       </SplashContainer>
     );
