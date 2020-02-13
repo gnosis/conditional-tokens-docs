@@ -34,12 +34,190 @@ class HomeSplash extends React.Component {
         <div className="inner index-info-block">
           <div 
           className="index-info-block-title">
-            Create conditional tokens, a new asset class with richer informational capabilities that makes the outcome of any future event tradable."
+            Create conditional tokens, a new asset class with richer informational capabilities that makes the outcome of any future event tradable.
           </div>
           <div className="index-info-block-text">
-          This developer portal aims to provide an overview of the conditional tokens standard.  It is a place to explore the various use cases for conditional tokens, as well as detailed tutorials on how to encode conditionality and liquidity into your own dapps and prediction markets."
+            <p>
+            This developer portal aims to provide an overview of the conditional tokens standard.
+            </p>
+            <p>
+            It is a place to explore the various use cases for conditional tokens, as well as detailed tutorials on how to encode conditionality and liquidity into your own dapps and prediction markets.
+            </p>
           </div>
         </div>
+
+        <div className="inner index-section-boxes">
+          <div>
+            <h3>
+              Introduction
+            </h3>
+            <p>
+              A <strong>short primer</strong> on Conditional Tokens
+            </p>
+          </div>
+          <div>
+            <h3>
+              User Cases
+            </h3>
+            <p>
+              Explore the <strong>versatility</strong> of Conditional Tokens
+            </p>
+          </div>
+          <div>
+            <h3>
+              Documentation
+            </h3>
+            <p>
+              <strong>Deep fice</strong> into the Conditional Tokens contracts
+            </p>
+          </div>
+          <div>
+            <h3>
+              Tutorials
+            </h3>
+            <p>
+              <strong>Get started</strong> and build your Conditional Token Dapp
+            </p>
+          </div>
+        </div>
+
+        <div className="inner index-section-last-boxes">
+          <div>
+            <h3>
+              Support
+            </h3>
+            <p>
+              Need some <strong>help</strong>? Reach out to us!
+            </p>
+          </div>
+
+          <div>
+            <h3>
+              Projects
+            </h3>
+            <p>
+              <strong>Explore</strong> existing Conditional Token applications
+            </p>
+          </div>
+        </div>
+
+        <div className="inner index-what-are">
+          <div>
+            <h2>
+              What are <br></br>Conditional Tokens?
+            </h2>
+          </div>
+          <div>
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          </div>
+        </div>
+
+        <div className="inner index-advantages">
+          <div>
+            <h2>
+              Advantages of <br></br>Conditional Tokens
+            </h2>
+          </div>
+          <div className="index-advantages-boxes">
+            <div>
+              <h3>
+                Documentation
+              </h3>
+              <p>
+                <strong>Deep Dive</strong> into the Conditional Token Contracts
+              </p>
+            </div>
+
+            <div>
+              <h3>
+                Tutorials
+              </h3>
+              <p>
+                <strong>Get started</strong> and build your Conditional Token Dapp
+              </p>
+            </div>
+
+            <div>
+              <h3>
+                Documentation
+              </h3>
+              <p>
+                <strong>Deep Dive</strong> into the Conditional Token Contracts
+              </p>
+            </div>
+
+            <div>
+              <h3>
+                Tutorials
+              </h3>
+              <p>
+                <strong>Get started</strong> and build your Conditional Token Dapp
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="inner index-projects-using">
+          <div>
+            <h2>
+              Projects using<br></br>Conditional Tokens
+            </h2>
+            <p>
+              This project is used by all these people
+            </p>
+          </div>
+          <div className="index-projects-boxes">
+            <div className="background-color-1">
+              P1
+            </div>
+            
+            <div className="background-color-2">
+              P2
+            </div>
+          
+            <div className="background-color-3">
+              P3
+            </div>
+
+            <div className="background-color-4">
+              P4
+            </div>
+            
+            <div className="background-color-5">
+              P5
+            </div>
+          
+            <div className="background-color-6">
+              P6
+            </div>
+          </div>
+        </div>
+
+        <div className="inner index-support">
+          <div>
+            <h2>
+              Support<br></br>and Community
+            </h2>
+            <p>
+              Reach out to us!
+            </p>
+          </div>
+          <div className="index-support-boxes">
+            <div>
+              Schedule a call with Gnosis
+            </div>
+            
+            <div>
+              Chat with us on discord
+            </div>
+          
+            <div>
+              Dev Focus Forum
+            </div>
+          </div>
+        </div>
+
+
       </SplashContainer>
     );
   }

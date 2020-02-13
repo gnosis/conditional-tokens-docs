@@ -34,10 +34,18 @@
    background-color: #f3f2f2;
  }
 
+ strong{
+    font-family: "Averta-Bold";
+ }
+
 .fixedHeaderContainer{
    position: initial;
    background-color: transparent;
    padding: 31px;
+}
+
+.navigationSlider .slidingNav ul{
+   background: transparent;
 }
 
 .fixedHeaderContainer a{
@@ -116,14 +124,22 @@
 .nav-footer .sitemap a{
    color: #001428;
 }
-
+.index-info-block{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   text-align: left;
+   margin-bottom: 8rem;
+}
 .index-info-block-title{
-   font-family: "Averta-Extra-Bold";
+   font-family: "Averta-Bold";
    font-size: 2rem;
    letter-spacing: 0.15rem;
    font-stretch: normal;
    font-style: normal;
    line-height: normal;
+   margin-right: 2rem;
+   flex-basis: 50%;
 }
 
 .index-info-block-text{
@@ -132,4 +148,171 @@
    font-stretch: normal;
    font-style: normal;
    line-height: normal;
+   flex-basis: 50%;
+}
+
+.index-section-boxes{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 2rem;
+   margin-bottom: 4rem;
+   text-align: left;
+}
+
+.index-section-boxes div{
+   border-radius: 4px;
+   box-shadow: 3px 4px 14px 0 rgba(0, 0, 0, 0.22);
+   background-color: white;
+   padding: 1rem;
+}
+
+.index-section-boxes h3{
+   margin-top: 0px;
+   font-family: "Averta-Bold";
+}
+
+.index-section-last-boxes{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   margin-bottom: 8rem;
+   text-align: left;
+}
+
+.index-section-last-boxes div{
+   border-radius: 4px;
+   box-shadow: 3px 4px 14px 0 rgba(0, 0, 0, 0.22);
+   background-color: white;
+   padding: 1rem;
+}
+
+.index-section-last-boxes h3{
+   margin-top: 0px;
+   font-family: "Averta-Bold";
+}
+
+.index-what-are{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   text-align: left;
+   margin-bottom: 8rem;
+}
+
+.index-what-are h2{
+   font-family: "Averta-Bold";
+   font-size: 2rem;
+   margin-top: 0px;
+}
+
+.index-advantages{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   text-align: left;
+   margin-bottom: 8rem;
+}
+
+.index-advantages h2{
+   font-family: "Averta-Bold";
+   font-size: 2rem;
+}
+
+.index-advantages-boxes{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   grid-row-gap: 2rem;
+}
+
+.index-advantages-boxes div{
+   border-radius: 4px;
+   box-shadow: 3px 4px 14px 0 rgba(0, 0, 0, 0.22);
+   background-color: white;
+   padding: 1rem;
+}
+
+.index-advantages-boxes h3{
+   margin-top: 0px;
+   font-family: "Averta-Bold";
+}
+
+.index-projects-using{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   grid-row-gap: 2rem;
+   text-align: left;
+   margin-bottom: 8rem;
+}
+
+.index-projects-using h2{
+   margin-top: 0px;
+   font-size: 2rem;
+   font-family: "Averta-Bold";
+}
+
+.index-projects-boxes{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 2rem;
+   grid-row-gap: 2rem;
+}
+
+.index-projects-boxes div{
+   border-radius: 4px;
+   box-shadow: 3px 4px 14px 0 rgba(0, 0, 0, 0.22);
+   padding: 1rem;
+   color: white;
+}
+
+.background-color-1{
+   background-color: #009cb4;
+}
+
+.background-color-2{
+   background-color: #8f8f8f;
+}
+
+.background-color-3{
+   background-color: #a7428e;
+}
+
+.background-color-4{
+   background-color: #b0b0b0;
+}
+
+.background-color-5{
+   background-color: #2e38d4;
+}
+
+.background-color-6{
+   background-color: #343434;
+}
+
+.index-support{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   text-align: left;
+}
+
+.index-support h2{
+   margin-top: 0px;
+   font-size: 2rem;
+   font-family: "Averta-Bold";
+}
+
+.index-support-boxes{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-row-gap: 2rem;
+   font-family: "Averta-Bold";
+   font-size: 1rem;
+}
+
+.index-support-boxes div{
+   padding: 0.8rem;
+   border-radius: 5px;
+   border: solid 2px #001428;
 }
