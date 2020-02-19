@@ -48,12 +48,14 @@ class HomeSplash extends React.Component {
 
         <div className="inner index-section-boxes grid-blocks four-blocks-grid">
           <div className="white-box">
-            <h3>
-              Introduction
-            </h3>
-            <p>
-              A <strong>short primer</strong> on Conditional Tokens
-            </p>
+            <a href="">
+              <h3>
+                Introduction
+              </h3>
+              <p>
+                A <strong>short primer</strong> on Conditional Tokens
+              </p>
+            </a>
           </div>
           <div className="white-box">
             <h3>

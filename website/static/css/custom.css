@@ -54,6 +54,10 @@
    left: auto;
 }
 
+.slidingNav li:hover a:hover{
+   color: #009cb4 !important;
+   background-color: transparent !important;
+}
 .navigationSlider .slidingNav ul{
    background: transparent;
 }
@@ -208,6 +212,11 @@ a{
    padding: 1rem;
 }
 
+.white-box:hover{
+   background-color: #009cb4;
+   color: #001428;
+}
+
 .index-info-block{
    margin-bottom: 8rem;
 }
@@ -327,6 +336,10 @@ a{
    padding: 0.8rem;
    border-radius: 5px;
    border: solid 2px #001428;
+}
+
+.index-support-boxes div:hover{
+   border: solid 2px #009cb4;
 }
 
 .index-support-boxes i{
