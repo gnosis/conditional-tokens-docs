@@ -332,19 +332,42 @@ a{
    font-size: 1rem;
 }
 
-.index-support-boxes div{
+.index-support-boxes a{
    padding: 0.8rem;
    border-radius: 5px;
    border: solid 2px #001428;
 }
 
-.index-support-boxes div:hover{
+.index-support-boxes a:hover{
    border: solid 2px #009cb4;
+   color: #009cb4;
 }
 
 .index-support-boxes i{
-   color: #001428;
    float: right;
+}
+
+.bordered-button{
+   padding: 0.8rem;
+   border-radius: 5px;
+   border: solid 2px #001428;
+   font-family: "Averta-Extra-Bold";
+}
+
+.bordered-button:hover{
+   border: solid 2px #009cb4;
+   color: #009cb4;
+}
+
+.github-star-button{
+   padding: 0.8rem;
+   border-radius: 5px;
+   border: solid 2px #001428;
+}
+
+.github-star-button:hover{
+   
+   border: solid 2px #009cb4;
 }
 
 .icon{
@@ -367,7 +390,7 @@ a{
 }
 
 .icon-star{
-   background-image: url(/img/icon-star.svg);
+   background-image: url(/img/icon-star-s.svg);
 }
 
 .icon-twitter{
@@ -380,4 +403,8 @@ a{
 
 .icon-arrow{
    background-image: url(/img/icon-arrow-s.svg);
+}
+
+.nav-footer .sitemap a:hover, .nav-footer .sitemap a:focus{
+   color: #009cb4;
 }
