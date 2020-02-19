@@ -31,7 +31,7 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <div className="inner index-info-block">
+        <div className="inner index-info-block grid-blocks two-blocks-grid">
           <div 
           className="index-info-block-title">
             Create conditional tokens, a new asset class with richer informational capabilities that makes the outcome of any future event tradable.
@@ -46,8 +46,8 @@ class HomeSplash extends React.Component {
           </div>
         </div>
 
-        <div className="inner index-section-boxes">
-          <div>
+        <div className="inner index-section-boxes grid-blocks four-blocks-grid">
+          <div className="white-box">
             <h3>
               Introduction
             </h3>
@@ -55,7 +55,7 @@ class HomeSplash extends React.Component {
               A <strong>short primer</strong> on Conditional Tokens
             </p>
           </div>
-          <div>
+          <div className="white-box">
             <h3>
               User Cases
             </h3>
@@ -63,15 +63,15 @@ class HomeSplash extends React.Component {
               Explore the <strong>versatility</strong> of Conditional Tokens
             </p>
           </div>
-          <div>
+          <div className="white-box">
             <h3>
               Documentation
             </h3>
             <p>
-              <strong>Deep fice</strong> into the Conditional Tokens contracts
+              <strong>Deep dive</strong> into the Conditional Tokens contracts
             </p>
           </div>
-          <div>
+          <div className="white-box">
             <h3>
               Tutorials
             </h3>
@@ -81,8 +81,8 @@ class HomeSplash extends React.Component {
           </div>
         </div>
 
-        <div className="inner index-section-last-boxes">
-          <div>
+        <div className="inner index-section-last-boxes grid-blocks two-blocks-grid">
+          <div className="white-box">
             <h3>
               Support
             </h3>
@@ -91,7 +91,7 @@ class HomeSplash extends React.Component {
             </p>
           </div>
 
-          <div>
+          <div className="white-box">
             <h3>
               Projects
             </h3>
@@ -101,7 +101,7 @@ class HomeSplash extends React.Component {
           </div>
         </div>
 
-        <div className="inner index-what-are">
+        <div className="inner index-what-are grid-blocks two-blocks-grid">
           <div>
             <h2>
               What are <br></br>Conditional Tokens?
@@ -112,14 +112,14 @@ class HomeSplash extends React.Component {
           </div>
         </div>
 
-        <div className="inner index-advantages">
+        <div className="inner index-advantages grid-blocks two-blocks-grid">
           <div>
             <h2>
               Advantages of <br></br>Conditional Tokens
             </h2>
           </div>
-          <div className="index-advantages-boxes">
-            <div>
+          <div className="index-advantages-boxes  grid-blocks two-blocks-grid">
+            <div className="white-box">
               <h3>
                 Documentation
               </h3>
@@ -128,7 +128,7 @@ class HomeSplash extends React.Component {
               </p>
             </div>
 
-            <div>
+            <div className="white-box">
               <h3>
                 Tutorials
               </h3>
@@ -137,7 +137,7 @@ class HomeSplash extends React.Component {
               </p>
             </div>
 
-            <div>
+            <div className="white-box">
               <h3>
                 Documentation
               </h3>
@@ -146,7 +146,7 @@ class HomeSplash extends React.Component {
               </p>
             </div>
 
-            <div>
+            <div className="white-box">
               <h3>
                 Tutorials
               </h3>
@@ -157,7 +157,7 @@ class HomeSplash extends React.Component {
           </div>
         </div>
 
-        <div className="inner index-projects-using">
+        <div className="inner index-projects-using grid-blocks two-blocks-grid">
           <div>
             <h2>
               Projects using<br></br>Conditional Tokens
@@ -166,34 +166,34 @@ class HomeSplash extends React.Component {
               This project is used by all these people
             </p>
           </div>
-          <div className="index-projects-boxes">
-            <div className="background-color-1">
+          <div className="index-projects-boxes grid-blocks three-blocks-grid">
+            <div className="white-box background-color-1">
               P1
             </div>
             
-            <div className="background-color-2">
+            <div className="white-box background-color-2">
               P2
             </div>
           
-            <div className="background-color-3">
+            <div className="white-box background-color-3">
               P3
             </div>
 
-            <div className="background-color-4">
+            <div className="white-box background-color-4">
               P4
             </div>
             
-            <div className="background-color-5">
+            <div className="white-box background-color-5">
               P5
             </div>
           
-            <div className="background-color-6">
+            <div className="white-box background-color-6">
               P6
             </div>
           </div>
         </div>
 
-        <div className="inner index-support">
+        <div className="inner index-support grid-blocks two-blocks-grid">
           <div>
             <h2>
               Support<br></br>and Community
@@ -202,17 +202,26 @@ class HomeSplash extends React.Component {
               Reach out to us!
             </p>
           </div>
-          <div className="index-support-boxes">
+          <div className="index-support-boxes grid-blocks">
             <div>
-              Schedule a call with Gnosis
+              <a href="">
+                Schedule a call with Gnosis
+                <i className="icon icon-arrow"></i>
+              </a>
             </div>
             
             <div>
-              Chat with us on discord
+              <a href="">
+                Chat with us on discord
+                <i className="icon icon-arrow"></i>
+              </a>
             </div>
           
             <div>
-              Dev Focus Forum
+              <a href="">
+                Dev Focus Forum
+                <i className="icon icon-arrow"></i>
+              </a>
             </div>
           </div>
         </div>

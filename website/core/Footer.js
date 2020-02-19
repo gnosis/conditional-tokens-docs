@@ -7,6 +7,7 @@
 
 const React = require('react');
 
+
 class Footer extends React.Component {
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
@@ -24,17 +25,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="nav-footer" id="footer">
-        <section className="sitemap">
-          <a href={this.props.config.baseUrl} className="nav-home">
-            {this.props.config.footerIcon && (
-              <img
-                src={this.props.config.baseUrl + this.props.config.footerIcon}
-                alt={this.props.config.title}
-                width="66"
-                height="58"
-              />
-            )}
-          </a>
+        <section className="sitemap grid-blocks six-blocks-grid">
           <div>
             <h5>Gnosis Ltd.</h5>
             <a href={this.docUrl('doc1.html', this.props.language)}>
@@ -62,41 +53,34 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+            <a href="https://blog.gnosis.pm">Blog</a>
             <a href="https://github.com/">GitHub</a>
             <a
               className="github-button"
-              href={this.props.config.repoUrl}
+              href="https://github.com/gnosis/gnosis-docs/"
               data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
+              data-count-href="/gnosis/gnosis-docs/stargazers"
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub">
               Star
             </a>
-            {this.props.config.twitterUsername && (
-              <div className="social">
-                <a
-                  href={`https://twitter.com/${this.props.config.twitterUsername}`}
-                  className="twitter-follow-button">
-                  Follow @{this.props.config.twitterUsername}
-                </a>
-              </div>
-            )}
-            {this.props.config.facebookAppId && (
-              <div className="social">
-                <div
-                  className="fb-like"
-                  data-href={this.props.config.url}
-                  data-colorscheme="dark"
-                  data-layout="standard"
-                  data-share="true"
-                  data-width="225"
-                  data-show-faces="false"
-                />
-              </div>
-            )}
           </div>
+
+          <div>
+            <h5>Community</h5>
+            <a href="https://blog.gnosis.pm">User Showcase</a>
+            <a href="https://github.com/">Stack Overflow</a>
+            <a href="https://github.com/">Project Chat</a>
+          </div>
+
+          <div></div>
+
+          <div>
+            <a className="icon icon-twitter" href="https://twitter.com/gnosisPM"></a>
+            <a className="icon icon-reddit" href="https://reddit.com"></a>
+            <a className="icon icon-github" href="https://github.com/gnosis"></a>
+            </div>
         </section>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
