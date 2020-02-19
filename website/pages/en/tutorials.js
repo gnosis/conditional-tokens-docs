@@ -32,7 +32,7 @@ function Tutorial(props) {
         </div>
 
         <div className="inner grid-blocks four-blocks-grid tutorials-boxes">
-          <a href="" className="white-box">
+          <a href={docUrl("doc5")} className="white-box">
             <h3>
               Template Tutorial
             </h3>
@@ -55,7 +55,7 @@ function Tutorial(props) {
             </p>
           </a>
 
-          <a href="" className="white-box">
+          <a href={docUrl("doc5")} className="white-box">
             <h3>
               Game Tutorial
             </h3>
@@ -78,7 +78,7 @@ function Tutorial(props) {
             </p>
           </a>
 
-          <a href="" className="white-box">
+          <a href={docUrl("doc5")} className="white-box">
             <h3>
               Get started
             </h3>

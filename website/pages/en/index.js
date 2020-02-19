@@ -47,7 +47,7 @@ class HomeSplash extends React.Component {
         </div>
 
         <div className="inner index-section-boxes grid-blocks four-blocks-grid">
-          <a href="" className="white-box">
+          <a href={docUrl("doc5")} className="white-box">
             <h3>
               Introduction
             </h3>
@@ -55,7 +55,7 @@ class HomeSplash extends React.Component {
               A <strong>short primer</strong> on Conditional Tokens
             </p>
           </a>
-          <a href="" className="white-box">
+          <a href={docUrl("doc5")} className="white-box">
             <h3>
               User Cases
             </h3>
@@ -63,7 +63,7 @@ class HomeSplash extends React.Component {
               Explore the <strong>versatility</strong> of Conditional Tokens
             </p>
           </a>
-          <a href="" className="white-box">
+          <a href={docUrl("doc5")} className="white-box">
             <h3>
               Documentation
             </h3>
