@@ -71,7 +71,7 @@ class HomeSplash extends React.Component {
               <strong>Deep dive</strong> into the Conditional Tokens contracts
             </p>
           </a>
-          <a href="" className="white-box">
+          <a href="/tutorials" className="white-box">
             <h3>
               Tutorials
             </h3>
