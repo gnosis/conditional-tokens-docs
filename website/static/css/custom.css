@@ -64,6 +64,11 @@
    color: #009cb4 !important;
    background-color: transparent !important;
 }
+
+.siteNavItemActive a{
+   background-color: transparent !important;
+   color: #009cb4 !important;
+}
 .navigationSlider .slidingNav ul{
    background: transparent;
 }
