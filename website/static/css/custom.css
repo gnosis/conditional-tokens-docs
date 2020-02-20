@@ -38,6 +38,12 @@
     font-family: "Averta-Bold";
  }
 
+ h1{
+    font-family: "Averta-Extra-Bold";
+    letter-spacing: 0.2rem;
+    font-weight: inherit;
+ }
+
 .fixedHeaderContainer{
    position: initial;
    background-color: transparent;
@@ -57,6 +63,11 @@
 .slidingNav li:hover a:hover{
    color: #009cb4 !important;
    background-color: transparent !important;
+}
+
+.siteNavItemActive a{
+   background-color: transparent !important;
+   color: #009cb4 !important;
 }
 .navigationSlider .slidingNav ul{
    background: transparent;
@@ -217,6 +228,14 @@ a{
    color: #001428;
 }
 
+.white-box h3{
+   margin-top: 0px;
+   font-size: 1rem;
+   font-family: "Averta-Extra-Bold";
+   font-weight: inherit;
+   letter-spacing: 0.05rem;
+}
+
 .index-info-block{
    margin-bottom: 8rem;
 }
@@ -332,19 +351,42 @@ a{
    font-size: 1rem;
 }
 
-.index-support-boxes div{
+.index-support-boxes a{
    padding: 0.8rem;
    border-radius: 5px;
    border: solid 2px #001428;
 }
 
-.index-support-boxes div:hover{
+.index-support-boxes a:hover{
    border: solid 2px #009cb4;
+   color: #009cb4;
 }
 
 .index-support-boxes i{
-   color: #001428;
    float: right;
+}
+
+.bordered-button{
+   padding: 0.8rem;
+   border-radius: 5px;
+   border: solid 2px #001428;
+   font-family: "Averta-Extra-Bold";
+}
+
+.bordered-button:hover{
+   border: solid 2px #009cb4;
+   color: #009cb4;
+}
+
+.github-star-button{
+   padding: 0.8rem;
+   border-radius: 5px;
+   border: solid 2px #001428;
+}
+
+.github-star-button:hover{
+   
+   border: solid 2px #009cb4;
 }
 
 .icon{
@@ -354,12 +396,17 @@ a{
    width: 28px;
 }
 
+.icon-small{
+   height: 14px;
+   width: 14px;
+}
+
 .icon-github{
    background-image: url(/img/icon-github.svg);
 }
 
 .icon-pen{
-   background-image: url(/img/icon-pen.svg);
+   background-image: url(/img/icon-pen-s.svg);
 }
 
 .icon-reddit{
@@ -367,7 +414,7 @@ a{
 }
 
 .icon-star{
-   background-image: url(/img/icon-star.svg);
+   background-image: url(/img/icon-star-s.svg);
 }
 
 .icon-twitter{
@@ -375,9 +422,26 @@ a{
 }
 
 .icon-time{
-   background-image: url(/img/icon-time.svg);
+   background-image: url(/img/icon-time-s.svg);
 }
 
 .icon-arrow{
    background-image: url(/img/icon-arrow-s.svg);
+}
+
+.nav-footer .sitemap a:hover, .nav-footer .sitemap a:focus{
+   color: #009cb4;
+}
+
+.box-icons{
+   display: flex;
+   font-family: "Averta-Extra-Bold";
+}
+
+.tutorials-intro{
+   margin-bottom: 6rem;
+}
+
+.tutorials-boxes{
+   margin-bottom: 6rem;
 }

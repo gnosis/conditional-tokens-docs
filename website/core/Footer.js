@@ -64,7 +64,14 @@ class Footer extends React.Component {
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub">
               Star
+              <span className="icon icon-star"></span>
             </a>
+            {/* <a
+              className="bordered-button"
+              href="https://github.com/gnosis/gnosis-docs/">
+              Star
+              <span className="icon icon-star"></span>
+            </a> */}
           </div>
 
           <div>

@@ -45,60 +45,58 @@ class HomeSplash extends React.Component {
         </div>
 
         <div className="inner index-section-boxes grid-blocks four-blocks-grid">
-          <div className="white-box">
-            <a href="">
-              <h3>
-                Introduction
-              </h3>
-              <p>
-                A <strong>short primer</strong> on Conditional Tokens
-              </p>
-            </a>
-          </div>
-          <div className="white-box">
+          <a href={docUrl("doc5")} className="white-box">
+            <h3>
+              Introduction
+            </h3>
+            <p>
+              A <strong>short primer</strong> on Conditional Tokens
+            </p>
+          </a>
+          <a href={docUrl("doc5")} className="white-box">
             <h3>
               Use Cases
             </h3>
             <p>
               Explore the <strong>versatility</strong> of Conditional Tokens
             </p>
-          </div>
-          <div className="white-box">
+          </a>
+          <a href={docUrl("doc5")} className="white-box">
             <h3>
               Documentation
             </h3>
             <p>
               <strong>Deep dive</strong> into the Conditional Tokens contracts
             </p>
-          </div>
-          <div className="white-box">
+          </a>
+          <a href="/tutorials" className="white-box">
             <h3>
               Tutorials
             </h3>
             <p>
               <strong>Get started</strong> and build your Conditional Token Dapp
             </p>
-          </div>
+          </a>
         </div>
 
         <div className="inner index-section-last-boxes grid-blocks two-blocks-grid">
-          <div className="white-box">
+          <a href="" className="white-box">
             <h3>
               Support
             </h3>
             <p>
               Need some <strong>help</strong>? Reach out to us!
             </p>
-          </div>
+          </a>
 
-          <div className="white-box">
+          <a href="" className="white-box">
             <h3>
               Projects
             </h3>
             <p>
               <strong>Explore</strong> existing Conditional Token applications
             </p>
-          </div>
+          </a>
         </div>
 
         <div className="inner index-what-are grid-blocks two-blocks-grid">
@@ -130,7 +128,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
             </h2>
           </div>
           <div className="index-advantages-boxes  grid-blocks two-blocks-grid">
-            <div className="white-box">
+            <a href="" className="white-box">
               <h3>
                 Deeper Combinatorial Markets
               </h3>
@@ -138,9 +136,9 @@ Prediction markets are the main use case for conditional tokens, which the Sight
               Enabling <strong>deeper information discovery</strong>  in respect to conditional probabilities of events.
 
               </p>
-            </div>
+            </a>
 
-            <div className="white-box">
+            <a href="" className="white-box">
               <h3>
                Oracle Agnostic
               </h3>
@@ -148,25 +146,25 @@ Prediction markets are the main use case for conditional tokens, which the Sight
                 Work with the <strong>right oracle for the right question protocol</strong> is not tied to any specific oracle.
              
               </p>
-            </div>
+            </a>
 
-            <div className="white-box">
+            <a href="" className="white-box">
               <h3>
                 ERC 1155 tokens
               </h3>
               <p>
                Allow batch transfers and receiver callbacks and <strong> avoid costly outcome token deployments</strong> for new events. 
               </p>
-            </div>
+            </a>
 
-            <div className="white-box">
+            <a href="" className="white-box">
               <h3>
                 Audited contracts
               </h3>
               <p>
                 Cut costs on development <strong>without sacrificing security</strong>. 
               </p>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -178,31 +176,34 @@ Prediction markets are the main use case for conditional tokens, which the Sight
             <p>
               This project is used by all these people
             </p>
+            <a href="" className="bordered-button">
+              see more
+            </a>
           </div>
           <div className="index-projects-boxes grid-blocks three-blocks-grid">
-            <div className="white-box background-color-1">
+            <a href="" className="white-box background-color-1">
               P1
-            </div>
+            </a>
             
-            <div className="white-box background-color-2">
+            <a href="" className="white-box background-color-2">
               P2
-            </div>
+            </a>
           
-            <div className="white-box background-color-3">
+            <a href="" className="white-box background-color-3">
               P3
-            </div>
+            </a>
 
-            <div className="white-box background-color-4">
+            <a href="" className="white-box background-color-4">
               P4
-            </div>
+            </a>
             
-            <div className="white-box background-color-5">
+            <a href="" className="white-box background-color-5">
               P5
-            </div>
+            </a>
           
-            <div className="white-box background-color-6">
+            <a href="" className="white-box background-color-6">
               P6
-            </div>
+            </a>
           </div>
         </div>
 
@@ -216,26 +217,22 @@ Prediction markets are the main use case for conditional tokens, which the Sight
             </p>
           </div>
           <div className="index-support-boxes grid-blocks">
-            <div>
-              <a href="">
+            <a href="">
                 Schedule a call with Gnosis
                 <i className="icon icon-arrow"></i>
-              </a>
-            </div>
             
-            <div>
-              <a href="">
+            </a>
+            
+            <a href="">
                 Chat with us on discord
                 <i className="icon icon-arrow"></i>
-              </a>
-            </div>
+              
+            </a>
           
-            <div>
-              <a href="">
+            <a href="">
                 Dev Focus Forum
                 <i className="icon icon-arrow"></i>
-              </a>
-            </div>
+            </a>
           </div>
         </div>
 
