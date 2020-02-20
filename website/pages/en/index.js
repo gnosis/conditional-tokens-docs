@@ -34,14 +34,12 @@ class HomeSplash extends React.Component {
         <div className="inner index-info-block grid-blocks two-blocks-grid">
           <div 
           className="index-info-block-title">
-            Create conditional tokens, a new asset class with richer informational capabilities that makes the outcome of any future event tradable.
+            Create conditional tokens: a new asset class with rich informational capabilities, making the outcome of any future event tradable.
           </div>
           <div className="index-info-block-text">
             <p>
-            This developer portal aims to provide an overview of the conditional tokens standard.
-            </p>
-            <p>
-            It is a place to explore the various use cases for conditional tokens, as well as detailed tutorials on how to encode conditionality and liquidity into your own dapps and prediction markets.
+            The conditional tokens developer portal aims to provide an overview of the open framework.</p> 
+            <p>It’s a place where you can explore different use cases for conditional tokens, as well as detailed tutorials on how to encode conditionality and liquidity into your own dapps and prediction markets.
             </p>
           </div>
         </div>
@@ -59,7 +57,7 @@ class HomeSplash extends React.Component {
           </div>
           <div className="white-box">
             <h3>
-              User Cases
+              Use Cases
             </h3>
             <p>
               Explore the <strong>versatility</strong> of Conditional Tokens
@@ -110,7 +108,18 @@ class HomeSplash extends React.Component {
             </h2>
           </div>
           <div>
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          <p> Gnosis has developed the conditional tokens open framework. Conditional tokens are an application agnostic, new asset class designed to facilitate the creation of highly liquid prediction markets. Conditional tokens enable combinatorial outcomes for higher resolution information discovery through prediction markets.</p>
+<p>
+The conditional tokens framework allows you to:
+</p>
+<p>
+- Make simple markets on the likelihood of a given event.
+- Make complex markets about how the likelihood of an event is affected by any other event. 
+- Trade any asset under the condition that a specific event occurs.
+</p>
+<p>
+Prediction markets are the main use case for conditional tokens, which the Sight prediction market platform and other Gnosis Ecosystem projects build on. Conditional tokens have a wide range of additional use cases, from awarding access rights in games to paying milestone-based and social impact bonds. </p>
+
           </div>
         </div>
 
@@ -123,37 +132,39 @@ class HomeSplash extends React.Component {
           <div className="index-advantages-boxes  grid-blocks two-blocks-grid">
             <div className="white-box">
               <h3>
-                Documentation
+                Deeper Combinatorial Markets
               </h3>
               <p>
-                <strong>Deep Dive</strong> into the Conditional Token Contracts
+              Enabling <strong>deeper information discovery</strong>  in respect to conditional probabilities of events.
+
               </p>
             </div>
 
             <div className="white-box">
               <h3>
-                Tutorials
+               Oracle Agnostic
               </h3>
               <p>
-                <strong>Get started</strong> and build your Conditional Token Dapp
+                Work with the <strong>right oracle for the right question protocol</strong> is not tied to any specific oracle.
+             
               </p>
             </div>
 
             <div className="white-box">
               <h3>
-                Documentation
+                ERC 1155 tokens
               </h3>
               <p>
-                <strong>Deep Dive</strong> into the Conditional Token Contracts
+               Allow batch transfers and receiver callbacks and <strong> avoid costly outcome token deployments</strong> for new events. 
               </p>
             </div>
 
             <div className="white-box">
               <h3>
-                Tutorials
+                Audited contracts
               </h3>
               <p>
-                <strong>Get started</strong> and build your Conditional Token Dapp
+                Cut costs on development <strong>without sacrificing security</strong>. 
               </p>
             </div>
           </div>
