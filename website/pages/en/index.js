@@ -211,9 +211,11 @@ Prediction markets are the main use case for conditional tokens, which the Sight
 
         <div className="inner index-support grid-blocks two-blocks-grid">
           <div>
-            <h2>
-              Support<br></br>and Community
-            </h2>
+            <a name="support">
+              <h2>
+                Support<br></br>and Community
+              </h2>
+            </a>
             <p>
               Reach out to us!
             </p>

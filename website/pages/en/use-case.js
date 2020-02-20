@@ -37,12 +37,40 @@ function Help(props) {
   return (
     <div className="docMainWrapper wrapper">
       <Container className="mainContainer documentContainer postContainer">
-        <div className="post">
-          <header className="postHeader">
-            <h1>Conditional Token Use Cases</h1>
-          </header>
-          <p>Learn about the different Use Cases of Conditional Tokens.</p>
-          <GridBlock contents={supportLinks} layout="threeColumn" />
+        <div className="index-info-block grid-blocks two-blocks-grid">
+          <div className="index-info-block-title">
+            Conditional Token Use Cases
+          </div>
+          <div className="index-info-block-text">
+            <p>Learn about the different Use Cases of Conditional Tokens.</p>
+          </div>
+        </div>
+
+        <div className="inner index-section-boxes grid-blocks three-blocks-grid">
+          <a href={docUrl("doc5")} className="white-box">
+            <h3>
+              Conditional Trades
+            </h3>
+            <p>
+              How CT can be used to make Trades under certain Conditions
+            </p>
+          </a>
+          <a href={docUrl("doc5")} className="white-box">
+            <h3>
+              Futarchy
+            </h3>
+            <p>
+              Make decission based on prediction markets
+            </p>
+          </a>
+          <a href={docUrl("doc5")} className="white-box">
+            <h3>
+              Games
+            </h3>
+            <p>
+              How can Conditional Tokens be used for Games
+            </p>
+          </a>
         </div>
       </Container>
     </div>
