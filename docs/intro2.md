@@ -1,6 +1,6 @@
 ---
-id: doc3
-title: Conditional Tokens use cases
+id: introduction2
+title: Conditional Token use cases
 sidebar_label: Conditional Tokens use cases
 ---
 

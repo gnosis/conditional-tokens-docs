@@ -22,7 +22,7 @@ function Help(props) {
   const supportLinks = [
     {
       content: 'How CT can be used to make Trades under certain Conditions',
-      title: 'Conditional Trades',
+      title: 'Tokens, Gaming, and Forking Gardens',
     },
     {
       content: 'Make decission based on prediction markets',
@@ -42,25 +42,27 @@ function Help(props) {
             Conditional Token Use Cases
           </div>
           <div className="index-info-block-text">
-            <p>Learn about the different Use Cases of Conditional Tokens.</p>
+            <p>
+            Learn about the different Use Cases of Conditional Tokens.
+            </p>
           </div>
         </div>
 
         <div className="inner index-section-boxes grid-blocks three-blocks-grid">
-          <a href={docUrl("doc5")} className="white-box">
+          <a href={docUrl("game1")} className="white-box">
             <h3>
-              Conditional Trades
+              Tokens, Gaming, and Forking Gardens
             </h3>
             <p>
-              How CT can be used to make Trades under certain Conditions
+              How prediction market tools like conditional tokens can change gaming
             </p>
           </a>
-          <a href={docUrl("doc5")} className="white-box">
+          <a href={docUrl("X")} className="white-box">
             <h3>
               Futarchy
             </h3>
             <p>
-              Make decission based on prediction markets
+              Make decission based on prediction markets 
             </p>
           </a>
           <a href={docUrl("doc5")} className="white-box">
@@ -71,6 +73,7 @@ function Help(props) {
               How can Conditional Tokens be used for Games
             </p>
           </a>
+        
         </div>
       </Container>
     </div>

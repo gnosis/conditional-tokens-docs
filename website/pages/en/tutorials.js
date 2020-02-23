@@ -32,17 +32,17 @@ function Tutorial(props) {
         </div>
 
         <div className="inner grid-blocks four-blocks-grid tutorials-boxes">
-          <a href={docUrl("doc5")} className="white-box">
+          <a href={docUrl("pmtutorial1")} className="white-box">
             <h3>
-              Template Tutorial
+             Set up a prediciton market in 30min
             </h3>
             <p>
-              Build a prediction Market in 30 min
+              How to set up a binary prediction market with the conditional token framework in 30min. 
             </p>
             <p className="box-icons">
               <i className="icon icon-small icon-time"></i>
               &nbsp;
-              1h
+              30min
               &nbsp;
               &nbsp;
               <i className="icon icon-small icon-star"></i>
@@ -51,10 +51,9 @@ function Tutorial(props) {
               &nbsp;
               &nbsp;
               <i className="icon icon-small icon-pen"></i>
-              solidity
+              react
             </p>
           </a>
-
           <a href={docUrl("doc5")} className="white-box">
             <h3>
               Game Tutorial
@@ -77,8 +76,7 @@ function Tutorial(props) {
               solidity
             </p>
           </a>
-
-          <a href={docUrl("doc5")} className="white-box">
+          <a href={docUrl("doc4")} className="white-box">
             <h3>
               Get started
             </h3>
@@ -99,7 +97,7 @@ function Tutorial(props) {
               <i className="icon icon-small icon-pen"></i>
               solidity
             </p>
-          </a>
+          </a> 
         </div>
       </Container>
     </div>

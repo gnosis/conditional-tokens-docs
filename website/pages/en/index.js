@@ -45,7 +45,7 @@ class HomeSplash extends React.Component {
         </div>
 
         <div className="inner index-section-boxes grid-blocks four-blocks-grid">
-          <a href={docUrl("doc5")} className="white-box">
+          <a href={docUrl("introduction1")} className="white-box">
             <h3>
               Introduction
             </h3>
@@ -53,7 +53,7 @@ class HomeSplash extends React.Component {
               A <strong>short primer</strong> on Conditional Tokens
             </p>
           </a>
-          <a href={docUrl("doc5")} className="white-box">
+          <a href="/use-case" className="white-box">
             <h3>
               Use Cases
             </h3>
@@ -61,7 +61,7 @@ class HomeSplash extends React.Component {
               Explore the <strong>versatility</strong> of Conditional Tokens
             </p>
           </a>
-          <a href={docUrl("doc5")} className="white-box">
+          <a href={docUrl("devguide01")} className="white-box">
             <h3>
               Documentation
             </h3>
@@ -80,7 +80,7 @@ class HomeSplash extends React.Component {
         </div>
 
         <div className="inner index-section-last-boxes grid-blocks two-blocks-grid">
-          <a href="" className="white-box">
+          <a href="/#support" className="white-box">
             <h3>
               Support
             </h3>
@@ -89,7 +89,7 @@ class HomeSplash extends React.Component {
             </p>
           </a>
 
-          <a href="" className="white-box">
+          <a href="/#projects" className="white-box">
             <h3>
               Projects
             </h3>
@@ -112,9 +112,9 @@ The conditional tokens framework allows you to:
 </p>
 <p>
 <MarkdownBlock>
-  - Make simple markets on the likelihood of a given event.
-  - Make complex markets about how the likelihood of an event is affected by any other event.  
-  - Trade any asset under the condition that a specific event occurs.  
+  * Make simple markets on the likelihood of a given event.
+  * Make complex markets about how the likelihood of an event is affected by any other event.  
+  * Trade any asset under the condition that a specific event occurs.  
 </MarkdownBlock>
 </p>
 <p>
@@ -172,15 +172,15 @@ Prediction markets are the main use case for conditional tokens, which the Sight
 
         <div className="inner index-projects-using grid-blocks two-blocks-grid">
           <div>
+           <a name="projects">
             <h2>
               Projects using<br></br>Conditional Tokens
             </h2>
-            <p>
-              This project is used by all these people
-            </p>
-            <a href="" className="bordered-button">
-              see more
             </a>
+            <p>
+              Conditional Tokens are already used by those projects.
+            </p>
+
           </div>
           <div className="index-projects-boxes grid-blocks three-blocks-grid">
             <a href="" className="white-box background-color-1">

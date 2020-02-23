@@ -1,12 +1,9 @@
 ---
-id: doc1
-title: Introduction
+id: introduction1
+title: A short primer on Conditional Tokens
 sidebar_label: A short primer on Conditional Tokens
 ---
-<em> Gnosis anticipates a tokenized future in which no single currency is dominant, and tradable asset classes take on increasing informational complexity. Conditional tokens that enable prediction markets are one of these new asset classes.</em>
-
-
-## A short primer on Conditional Tokens
+<span style="color:#009cb4"><font size="4"><em> **Gnosis anticipates a tokenized future in which no single currency is dominant, and tradable asset classes take on increasing informational complexity. Conditional tokens that enable prediction markets are one of these new asset classes.**</em></font></span>
 
 To better understand the reasoning behind the development of the conditional token framework, it’s helpful to understand the basic concept of a prediction market. Prediction markets—also referred to as information markets, idea futures, event derivatives, decision markets, or virtual stock markets—are exchange-traded markets where individuals stake on the outcome of an event. In blockchain-based prediction markets, participants stake on the market in the form of event contracts. These contracts specify the different possible outcomes of a future event, a payment structure based on those outcomes, and the event’s outcome date.  Unlike financial markets such as stock or commodities futures, which traders use to hedge against risk (i.e., farmers use futures markets to hedge against low crop prices, airlines use futures markets to hedge against high fuel prices), prediction markets primarily seek to aggregate information on particular topics of interest. The principal informational value of a prediction market lies in the price of the futures themselves, which not only represent the average assessment of market participants concerning the likelihood of an event’s outcome, but also the confidence level different participants have in their predictions.
 
@@ -60,9 +57,11 @@ With the new contract, one can maximize fungibility in deeper combinatorial mark
 
 A recap looking deeper into the benefits of conditional tokens can be found here: 
 
+
 <figure class="video_container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/brFdf7pIYag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 </figure>
+
 
 
 To summarize, conditional tokens allow you to: 
