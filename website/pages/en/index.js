@@ -9,7 +9,6 @@ const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
@@ -111,11 +110,11 @@ class HomeSplash extends React.Component {
 The conditional tokens framework allows you to:
 </p>
 <p>
-<MarkdownBlock>
-  * Make simple markets on the likelihood of a given event.
-  * Make complex markets about how the likelihood of an event is affected by any other event.  
-  * Trade any asset under the condition that a specific event occurs.  
-</MarkdownBlock>
+<ul>
+  <li> Make simple markets on the likelihood of a given event.</li>
+  <li> Make complex markets about how the likelihood of an event is affected by any other event.</li>
+  <li> Trade any asset under the condition that a specific event occurs.</li>
+</ul>
 </p>
 <p>
 Prediction markets are the main use case for conditional tokens, which the Sight prediction market platform and other Gnosis Ecosystem projects build on. Conditional tokens have a wide range of additional use cases, from awarding access rights in games to paying milestone-based and social impact bonds. </p>
