@@ -1,7 +1,7 @@
 ---
 id: devguide04
-title: Outcome Collection
-sidebar_label: Outcome Collection
+title: Defining Positions
+sidebar_label: Defining Positions
 ---
 In order to define a position, we first need to designate a collateral
 token. This token must be an
