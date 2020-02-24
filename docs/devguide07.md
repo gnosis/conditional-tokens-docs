@@ -30,6 +30,8 @@ This will trigger the following event:
 
 Also look at this chart:
 
-IMAGE
+<img src="/img/redemption.png">
+
+
 
 
