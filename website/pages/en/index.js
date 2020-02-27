@@ -129,7 +129,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
             </h2>
           </div>
           <div className="index-advantages-boxes  grid-blocks two-blocks-grid">
-            <a href="" className="white-box">
+            <a className="white-box">
               <h3>
                 Deeper Combinatorial Markets
               </h3>
@@ -139,7 +139,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
               </p>
             </a>
 
-            <a href="" className="white-box">
+            <a className="white-box">
               <h3>
                Oracle Agnostic
               </h3>
@@ -149,7 +149,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
               </p>
             </a>
 
-            <a href="" className="white-box">
+            <a className="white-box">
               <h3>
                 ERC 1155 tokens
               </h3>
@@ -158,7 +158,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
               </p>
             </a>
 
-            <a href="" className="white-box">
+            <a  className="white-box">
               <h3>
                 Audited contracts
               </h3>
