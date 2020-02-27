@@ -13,11 +13,11 @@ This tutorial is meant for those with a basic knowledge of Ethereum and [Solidit
 In this Tutorial we will cover: 
 
 - Prediction Market Use Case
-- How to prepare a condition
-- How to Tie in the market maker
-- How to enable trading
-- How to resolve Market
-- How to redeem positions
+- Prepare a condition
+- Tie in the market maker
+- Enable trading
+- Resolve Market
+- Redeem positions
 
 During this Tutorial we will guide you through setting up a prediction market. It will serve as an example to make you familiar with the different terms. You can use to build any other predicition market use case e.g. a prediction market for political events, price forecasting etc.
 

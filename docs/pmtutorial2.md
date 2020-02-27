@@ -6,11 +6,11 @@ sidebar_label: Prediction Market use case
 
 Prediction markets enable deeper information discovery ranging from topics of the outcome of political events to application to solve for resource allocation in complex domains. Here we want to introduce another use case which will serve as an example to build your own prediction market.
 
-In the past years more weather extremes could be observed all over the world. In Europe, the last two summers are considered the hottest summers since the start of weather records. This resulted in dry fields and loss of crops. Prediction markets could forecast the impact of extreme weather on the crops yield and the resulting price for producers and consumers. So we will be looking into the Influence of weather conditions on food prices. 
+In the past years more weather extremes could be observed all over the world. In Europe, the last two summers are considered the hottest summers since the start of weather records. This resulted in dry fields and loss of crops. Prediction markets could forecast the impact of extreme weather on the crops yield and the resulting price for producers and consumers. So we will be looking into the influence of weather conditions on food prices. 
 
 Markets for this application could ask:
 
-1. Will the summer 2020 in Germany break again weather records? 
+1. Will the summer 2020 in Germany break weather records? 
 - Yes
 - No
 
