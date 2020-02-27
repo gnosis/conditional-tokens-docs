@@ -36,7 +36,7 @@ function Tutorial(props) {
         <div className="inner grid-blocks four-blocks-grid tutorials-boxes">
           <a href={docUrl("pmtutorial1")} className="white-box">
             <h3>
-             Set up a prediciton market in 30min
+             Set up a prediction market in 30min
             </h3>
             <p>
               How to set up a binary prediction market with the conditional token framework in 30min. 
