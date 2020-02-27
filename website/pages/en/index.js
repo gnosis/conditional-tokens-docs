@@ -181,7 +181,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
             </p>
 
           </div>
-          
+
           <div className="index-projects-boxes grid-blocks three-blocks-grid">
                       
             <a href="https://alice.si/" className="white-box">
@@ -213,7 +213,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
           <div className="index-support-boxes grid-blocks">
             <div id="index-support-telegram">
               <a href="https://discordapp.com/channels/477106835862716416/477391477681684480">
-                  Chat with us via Telegram
+                  Chat with us on Discord
               </a>
             </div>
           </div>
