@@ -28,6 +28,11 @@ Run `ganache-cli` using the deterministic option to make the tutorial easier to 
 ganache-cli -d
 ```
 
+These are the versions used in this tutorial:
+- `truffle`: v5.1.13
+- `node`: v10.16.3
+- `ganache-cli`: v6.9.1
+
 Now please download and install the [Conditional Tokens Tutorial](https://github.com/gnosis/conditional-tokens-tutorial) repository from GitHub:
 ```
 git clone https://github.com/gnosis/conditional-tokens-tutorial.git
@@ -47,7 +52,7 @@ Available Accounts
 (3) 0xE11BA2b4D45Eaed5996Cd0823791E0C93114882d (100 ETH)
 ```
 - The first address `0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1` will be used as the operator who creates and closes the prediction market.
-- The second address `0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0` will be the oracle who has the answer and resolves the market.
+- The second address `0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0` will be the oracle who have the answer and resolves the market.
 - The third `0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b` and the forth `0xE11BA2b4D45Eaed5996Cd0823791E0C93114882d` will be two traders who participate in the market.
 
 Find the `.env.example` file in the root folder of the project, rename this file to `.env` and check what it was previously stated:

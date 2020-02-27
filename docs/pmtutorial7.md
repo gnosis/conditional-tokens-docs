@@ -3,7 +3,6 @@ id: pmtutorial7
 title: Resolving the market
 sidebar_label: Resolving the market
 ---
-
 Before the market is resolved by the oracle, the operator should close it first to prevent participants from continuing trading when the right answer is already publicly available.
 
 ## Closing the market
@@ -47,8 +46,8 @@ The function [reportPayouts](https://github.com/gnosis/conditional-tokens-contra
 ```
 function reportPayouts(bytes32 questionId, uint[] calldata payouts) external
 ```
-- `questionId`: The question id the oracle is answering for
-- `payouts`: The oracle's answer
+- `questionId`: The question id the oracle is answering for.
+- `payouts`: The oracle's answer.
 
 If the function succeeds, the following [event](https://github.com/gnosis/conditional-tokens-contracts/blob/master/contracts/ConditionalTokens.sol#L20) will be emitted, meaning that the condition was resolved.
 

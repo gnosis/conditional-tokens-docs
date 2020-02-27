@@ -84,3 +84,4 @@ const sell = async () => {
   const tx = await marketMakersRepo.trade(outcomeTokenAmounts, profit, account)
 }
 ```
+

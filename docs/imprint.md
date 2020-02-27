@@ -2,8 +2,6 @@
 id: imprint
 title: Imprint
 ---
-<img id="imprint-gnosis-logo" src="/img/gnosis_logo_blue.png">
-
 
 **Gnosis Ltd.**
 
