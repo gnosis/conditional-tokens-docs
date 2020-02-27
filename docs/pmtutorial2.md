@@ -10,21 +10,21 @@ In the past years more weather extremes could be observed all over the world. In
 
 Markets for this application could ask:
 
-> 1. Will the summer 2020 in Germany break again weather records? 
-> - Yes
-> - No
+1. Will the summer 2020 in Germany break again weather records? 
+- Yes
+- No
 
-> 2. Will the potato price in Germany increase in autumn 2020? 
-> - Yes
-> - No
+2. Will the potato price in Germany increase in autumn 2020? 
+- Yes
+- No
 
-> 3. Will the producer price of milk increase in 2020 in Germany?
-> - Yes
-> - No
+3. Will the producer price of milk increase in 2020 in Germany?
+- Yes
+- No
 
-> 4. Will the  retail price for milk increase in 2020 in Germany? 
-> - Yes
-> - No
+4. Will the  retail price for milk increase in 2020 in Germany? 
+- Yes
+- No
 
 This is just a small collection of possible markets but it gives an idea where this is going. 
 With the help of this use case we will guide you through the different steps to build your prediction market application.
