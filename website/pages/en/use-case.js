@@ -57,7 +57,7 @@ function Help(props) {
               How prediction market tools like conditional tokens can change gaming
             </p>
           </a>
-          <a href={docUrl("X")} className="white-box">
+          <a href="https://blog.gnosis.pm/how-manipulation-resistant-are-prediction-markets-710e14033d62" className="white-box">
             <h3>
               Futarchy
             </h3>
@@ -65,12 +65,12 @@ function Help(props) {
               Make decission based on prediction markets 
             </p>
           </a>
-          <a href={docUrl("doc5")} className="white-box">
+         <a className="white-box">
             <h3>
-              Games
+              To be continued... 
             </h3>
             <p>
-              How can Conditional Tokens be used for Games
+               More use cases will be added over time. Make sure to come back and learn more about Conditional Tokens.
             </p>
           </a>
         

@@ -36,7 +36,7 @@ The supply and demand—buyers and sellers —of “Yang is elected” and “Tr
 
 ## Other possible use cases
 
-Conditional tokens are built on the ERC-1155 token standard, which  affords numerous advantages for their multiple use cases. For instance, ERC-1155 batch sends substantially decrease gas costs for users, making them ideal within gaming environments that encompass different tokens and high-velocity economies. Section XXX highlights a few more of these use cases. 
+Conditional tokens are built on the ERC-1155 token standard, which  affords numerous advantages for their multiple use cases. For instance, ERC-1155 batch sends substantially decrease gas costs for users, making them ideal within gaming environments that encompass different tokens and high-velocity economies.
 
-The USE CASE section explores how the conditional token standard can be used to improve existing decentralized applications (dapps). In the tutorials section, you’ll find the tools and know-how needed to set up, inspect, and apply the conditional tokens framework to your own projects—as well as some inspiration regarding other use cases for this new standard beyond prediction markets.
+The <a href="/use-case">use case</a> section explores how the conditional token standard can be used to improve existing decentralized applications (dapps). In the tutorials section, you’ll find the tools and know-how needed to set up, inspect, and apply the conditional tokens framework to your own projects—as well as some inspiration regarding other use cases for this new standard beyond prediction markets.
  

@@ -182,29 +182,19 @@ Prediction markets are the main use case for conditional tokens, which the Sight
 
           </div>
           <div className="index-projects-boxes grid-blocks three-blocks-grid">
-            <a href="" className="white-box background-color-1">
-              P1
-            </a>
-            
-            <a href="" className="white-box background-color-2">
-              P2
-            </a>
-          
-            <a href="" className="white-box background-color-3">
-              P3
+                      
+            <a href="https://alice.si/" className="white-box">
+              <img src="/img/alice.png"></img>
             </a>
 
-            <a href="" className="white-box background-color-4">
-              P4
+            <a href="https://www.flyingcarpet.network/" className="white-box">
+              <img src="/img/flca.png"></img>
+            </a>
+
+            <a href="https://sight.pm/" className="white-box">
+              <img src="/img/gnosis.png"></img>
             </a>
             
-            <a href="" className="white-box background-color-5">
-              P5
-            </a>
-          
-            <a href="" className="white-box background-color-6">
-              P6
-            </a>
           </div>
         </div>
 
@@ -218,29 +208,18 @@ Prediction markets are the main use case for conditional tokens, which the Sight
             <p>
               Reach out to us!
             </p>
-          </div>
+</div>
           <div className="index-support-boxes grid-blocks">
-            <a href="">
-                Schedule a call with Gnosis
-                <i className="icon icon-arrow"></i>
-            
-            </a>
-            
-            <a href="">
-                Chat with us on discord
-                <i className="icon icon-arrow"></i>
-              
-            </a>
-          
-            <a href="">
-                Dev Focus Forum
-                <i className="icon icon-arrow"></i>
-            </a>
+            <div id="index-support-telegram">
+              <a href="https://t.me/ConditionalTokens">
+                  Chat with us via Telegram
+              </a>
+            </div>
           </div>
         </div>
 
 
-      </SplashContainer>
+              </SplashContainer>
     );
   }
 }

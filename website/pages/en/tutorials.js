@@ -22,15 +22,17 @@ function Tutorial(props) {
   return (
     <div className="docMainWrapper wrapper">
       <Container className="mainContainer documentContainer postContainer">
-        <div className="tutorials-intro">
-          <h1>
+       <div className="index-info-block grid-blocks two-blocks-grid">
+          <div className="index-info-block-title">
             Tutorials
-          </h1>
-          <p>
+          </div>
+          <div className="index-info-block-text">
+            <p>
             OK, enough about contracts and the many futures of <br></br>conditional tokens. Let’s start building it already!
-          </p>
+            </p>
+          </div>
         </div>
-
+       
         <div className="inner grid-blocks four-blocks-grid tutorials-boxes">
           <a href={docUrl("pmtutorial1")} className="white-box">
             <h3>
@@ -54,50 +56,14 @@ function Tutorial(props) {
               react
             </p>
           </a>
-          <a href={docUrl("doc5")} className="white-box">
+          <a className="white-box">
             <h3>
-              Game Tutorial
+              To be continued...
             </h3>
             <p>
-              Use Conditional Tokens to build a game
-            </p>
-            <p className="box-icons">
-              <i className="icon icon-small icon-time"></i>
-              &nbsp;
-              1h
-              &nbsp;
-              &nbsp;
-              <i className="icon icon-small icon-star"></i>
-              &nbsp;
-              easy
-              &nbsp;
-              &nbsp;
-              <i className="icon icon-small icon-pen"></i>
-              solidity
+             More tutorials will be added over time. Make sure to come back and learn more about Conditional Tokens.
             </p>
           </a>
-          <a href={docUrl("doc4")} className="white-box">
-            <h3>
-              Get started
-            </h3>
-            <p>
-            Set up everything to build your Prediction Market
-            </p>
-            <p className="box-icons">
-              <i className="icon icon-small icon-time"></i>
-              &nbsp;
-              1h
-              &nbsp;
-              &nbsp;
-              <i className="icon icon-small icon-star"></i>
-              &nbsp;
-              easy
-              &nbsp;
-              &nbsp;
-              <i className="icon icon-small icon-pen"></i>
-              solidity
-            </p>
-          </a> 
         </div>
       </Container>
     </div>

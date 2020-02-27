@@ -351,6 +351,11 @@ a{
    font-size: 1rem;
 }
 
+#imprint-gnosis-logo{
+   width: 10%;
+   margin: unset;
+}
+
 .index-support-boxes a{
    padding: 0.8rem;
    border-radius: 5px;
@@ -448,4 +453,14 @@ a{
 
 #pm-infographic{
    width: 70%;
+}
+
+.navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+  background-color: unset;
+  color: $primaryColor;
+}
+
+.mainContainer .post a {
+   color: $primaryColor;
+   text-decoration: underline;
 }

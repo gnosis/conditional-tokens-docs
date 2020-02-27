@@ -40,8 +40,8 @@ const siteConfig = {
   headerLinks: [
     {doc: 'introduction1', label: 'Introduction'},
     {page: 'use-case', label: 'Use Case'},
-    {page: 'tutorials', label: 'Tutorials'},
     {doc: 'devguide01', label: 'Documentation'},
+    {page: 'tutorials', label: 'Tutorials'},
     {href: "/#support", label: 'Support'},
   ],
 
