@@ -40,7 +40,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY_ID
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     skip_cleanup: true
-    local_dir: website/build/test-site
+    local_dir: website/build/gnosis-docs
     on:
       branch: develop
       node: '12'
@@ -49,8 +49,23 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY_ID
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     skip_cleanup: true
-    local_dir: website/build/test-site
+    local_dir: website/build/gnosis-docs
     upload-dir: current
     on:
       branch: master
+      node: '12'
+  - provider: s3
+    bucket: $STAGING_BUCKET_NAME
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    access_key_id: $AWS_ACCESS_KEY_ID
+    skip_cleanup: true
+    local_dir: website/build/gnosis-docs
+    upload-dir: releases/$TRAVIS_TAG
+    on:
+      tags: true
+      node: '12'
+  - provider: script
+    script: ./travis/prepare_production_deployment.sh
+    on:
+      tags: true
       node: '12'

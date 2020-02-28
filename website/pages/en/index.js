@@ -9,7 +9,6 @@ const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
@@ -29,47 +28,199 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const Logo = props => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
-      </div>
-    );
-
-    const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        {siteConfig.title}
-        <small>{siteConfig.tagline}</small>
-      </h2>
-    );
-
-    const PromoSection = props => (
-      <div className="section promoSection">
-        <div className="promoRow">
-          <div className="pluginRowBlock">{props.children}</div>
-        </div>
-      </div>
-    );
-
-    const Button = props => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
-      </div>
-    );
-
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
-        <div className="inner">
-          <ProjectTitle siteConfig={siteConfig} />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
-          </PromoSection>
+        <div className="inner index-info-block grid-blocks two-blocks-grid">
+          <div 
+          className="index-info-block-title">
+            Create conditional tokens: a new asset class with rich informational capabilities, making the outcome of any future event tradable.
+          </div>
+          <div className="index-info-block-text">
+            <p>
+            The conditional tokens developer portal aims to provide an overview of the open framework.</p> 
+            <p>It’s a place where you can explore different use cases for conditional tokens, as well as detailed tutorials on how to encode conditionality and liquidity into your own dapps and prediction markets.
+            </p>
+          </div>
         </div>
-      </SplashContainer>
+
+        <div className="inner index-section-boxes grid-blocks four-blocks-grid">
+          <a href={docUrl("introduction1")} className="white-box">
+            <h3>
+              Introduction
+            </h3>
+            <p>
+              A <strong>short primer</strong> on Conditional Tokens
+            </p>
+          </a>
+          <a href="/use-case" className="white-box">
+            <h3>
+              Use Cases
+            </h3>
+            <p>
+              Explore the <strong>versatility</strong> of Conditional Tokens
+            </p>
+          </a>
+          <a href={docUrl("devguide01")} className="white-box">
+            <h3>
+              Documentation
+            </h3>
+            <p>
+              <strong>Deep dive</strong> into the Conditional Tokens contracts
+            </p>
+          </a>
+          <a href="/tutorials" className="white-box">
+            <h3>
+              Tutorials
+            </h3>
+            <p>
+              <strong>Get started</strong> and build your Conditional Token Dapp
+            </p>
+          </a>
+        </div>
+
+        <div className="inner index-section-last-boxes grid-blocks two-blocks-grid">
+          <a href="/#support" className="white-box">
+            <h3>
+              Support
+            </h3>
+            <p>
+              Need some <strong>help</strong>? Reach out to us!
+            </p>
+          </a>
+
+          <a href="/#projects" className="white-box">
+            <h3>
+              Projects
+            </h3>
+            <p>
+              <strong>Explore</strong> existing Conditional Token applications
+            </p>
+          </a>
+        </div>
+
+        <div className="inner index-what-are grid-blocks two-blocks-grid">
+          <div>
+            <h2>
+              What are <br></br>Conditional Tokens?
+            </h2>
+          </div>
+          <div>
+          <p> Gnosis has developed the conditional tokens open framework. Conditional tokens are an application agnostic, new asset class designed to facilitate the creation of highly liquid prediction markets. Conditional tokens enable combinatorial outcomes for higher resolution information discovery through prediction markets.</p>
+<p>
+The conditional tokens framework allows you to:
+</p>
+<p>
+<ul>
+  <li> Make simple markets on the likelihood of a given event.</li>
+  <li> Make complex markets about how the likelihood of an event is affected by any other event.</li>
+  <li> Trade any asset under the condition that a specific event occurs.</li>
+</ul>
+</p>
+<p>
+Prediction markets are the main use case for conditional tokens, which the Sight prediction market platform and other Gnosis Ecosystem projects build on. Conditional tokens have a wide range of additional use cases, from awarding access rights in games to paying milestone-based and social impact bonds. </p>
+
+          </div>
+        </div>
+
+        <div className="inner index-advantages grid-blocks two-blocks-grid">
+          <div>
+            <h2>
+              Advantages of <br></br>Conditional Tokens
+            </h2>
+          </div>
+          <div className="index-advantages-boxes  grid-blocks two-blocks-grid">
+            <a className="white-box">
+              <h3>
+                Deeper Combinatorial Markets
+              </h3>
+              <p>
+              Enabling <strong>deeper information discovery</strong>  in respect to conditional probabilities of events.
+
+              </p>
+            </a>
+
+            <a className="white-box">
+              <h3>
+               Oracle Agnostic
+              </h3>
+              <p>
+                Work with the <strong>right oracle for the right question protocol</strong> is not tied to any specific oracle.
+             
+              </p>
+            </a>
+
+            <a className="white-box">
+              <h3>
+                ERC 1155 tokens
+              </h3>
+              <p>
+               Allow batch transfers and receiver callbacks and <strong> avoid costly outcome token deployments</strong> for new events. 
+              </p>
+            </a>
+
+            <a  className="white-box">
+              <h3>
+                Audited contracts
+              </h3>
+              <p>
+                Cut costs on development <strong>without sacrificing security</strong>. 
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div className="inner index-projects-using grid-blocks two-blocks-grid">
+          <div>
+           <a name="projects">
+            <h2>
+              Projects using<br></br>Conditional Tokens
+            </h2>
+            </a>
+            <p>
+              Conditional Tokens are already used by those projects.
+            </p>
+
+          </div>
+
+          <div className="index-projects-boxes grid-blocks three-blocks-grid">
+                      
+            <a href="https://alice.si/" className="white-box">
+              <img src="/img/alice.png"></img>
+            </a>
+
+            <a href="https://www.flyingcarpet.network/" className="white-box">
+              <img src="/img/flca.png"></img>
+            </a>
+
+            <a href="https://sight.pm/" className="white-box">
+              <img src="/img/gnosis.png"></img>
+            </a>
+            
+          </div>
+        </div>
+
+        <div className="inner index-support grid-blocks two-blocks-grid">
+          <div>
+            <a name="support">
+              <h2>
+                Support<br></br>and Community
+              </h2>
+            </a>
+            <p>
+              Reach out to us!
+            </p>
+</div>
+          <div className="index-support-boxes grid-blocks">
+            <div id="index-support-telegram">
+              <a href="https://discordapp.com/channels/477106835862716416/477391477681684480">
+                  Chat with us on Discord
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+              </SplashContainer>
     );
   }
 }
@@ -92,117 +243,11 @@ class Index extends React.Component {
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
-            imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
-    const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
-            imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
-          },
-        ]}
-      </Block>
-    );
-
-    const Features = () => (
-      <Block layout="fourColumn">
-        {[
-          {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
-          },
-          {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
-          },
-        ]}
-      </Block>
-    );
-
-    const Showcase = () => {
-      if ((siteConfig.users || []).length === 0) {
-        return null;
-      }
-
-      const showcase = siteConfig.users
-        .filter(user => user.pinned)
-        .map(user => (
-          <a href={user.infoLink} key={user.infoLink}>
-            <img src={user.image} alt={user.caption} title={user.caption} />
-          </a>
-        ));
-
-      const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
-
-      return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
-        </div>
-      );
-    };
 
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase />
         </div>
       </div>
     );

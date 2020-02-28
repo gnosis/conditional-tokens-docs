@@ -66,6 +66,11 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
+github-buttons@^2.3.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/github-buttons/-/github-buttons-2.7.0.tgz#ce481388a39a8ed91a8073b6d3f1802f0068d52d"
+  integrity sha512-NGW6U6ZgLVTat6E6ZobWa9lwHsrthRo8NJ8GxlOAcrfeURg0k9qTrs1gG6Vzjjxt8jg/Wd2Or7RSGjKOrT5mFA==
+
 glob@^7.0.0:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
@@ -124,6 +129,13 @@ path-parse@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+
+react-github-btn@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-github-btn/-/react-github-btn-1.1.1.tgz#d08f6da1683a7994c54163af240d88ba5efa7057"
+  integrity sha512-haORkaENCh9DD953dle49aI/WWAxGauaA2xjbBgmPPvPY0KMvRslswl6TBTiZ8u6pRhLN4k+mXfaKWYnS/o7BQ==
+  dependencies:
+    github-buttons "^2.3.0"
 
 rechoir@^0.6.2:
   version "0.6.2"
