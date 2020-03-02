@@ -42,7 +42,7 @@ const siteConfig = {
     {page: 'use-case', label: 'Use Case'},
     {doc: 'devguide01', label: 'Documentation'},
     {page: 'tutorials', label: 'Tutorials'},
-    {href: "/#support", label: 'Support'},
+    {href: "#support", label: 'Support'},
   ],
 
   // If you have users set above, you add it here:
