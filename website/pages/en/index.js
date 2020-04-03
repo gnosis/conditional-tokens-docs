@@ -212,7 +212,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
 </div>
           <div className="index-support-boxes grid-blocks">
             <div id="index-support-telegram">
-              <a href="https://discordapp.com/channels/477106835862716416/477391477681684480">
+              <a href="https://discord.gg/CsFDMr">
                   Chat with us on Discord
               </a>
             </div>

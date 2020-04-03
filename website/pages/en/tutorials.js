@@ -56,6 +56,14 @@ function Tutorial(props) {
               react
             </p>
           </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeP0Y0bIT1c4YW1W-nJqWYwImGzOhmUExIN8p3myvQAwOGNbg/viewform"  className="white-box">
+            <h3>
+              Looking for a specific tutorial? 
+            </h3>
+            <p>
+             Reach out to us and tell us what tutorial you would like to see here.
+            </p>
+          </a>
           <a className="white-box">
             <h3>
               To be continued...
