@@ -73,6 +73,8 @@ const siteConfig = {
   },
   */
 
+  gaTrackingId: process.env.GA_TACKING_ID || '',
+
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Gnosis LTD`,
 
