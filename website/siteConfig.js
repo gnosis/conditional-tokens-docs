@@ -24,7 +24,7 @@ const siteConfig = {
   title: 'Gnosis Developer Portal Conditional Tokens', // Title for your website.
   tagline: 'Create conditional tokens, a new asset class with richer informational capabilities that makes the outcome of any future event tradable.',
   url: 'https://docs.gnosis.io', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  baseUrl: '/conditionaltokens/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -42,7 +42,7 @@ const siteConfig = {
     {page: 'use-case', label: 'Use Case'},
     {doc: 'devguide01', label: 'Documentation'},
     {page: 'tutorials', label: 'Tutorials'},
-    {href: "/#support", label: 'Support'},
+    {href: "/conditionaltokens/#support", label: 'Support'},
   ],
 
   // If you have users set above, you add it here:
