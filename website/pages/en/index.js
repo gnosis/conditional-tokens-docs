@@ -19,6 +19,7 @@ class HomeSplash extends React.Component {
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    const pageUrl = page => `${baseUrl}${page}`
 
     const SplashContainer = props => (
       <div className="homeContainer">
@@ -52,7 +53,7 @@ class HomeSplash extends React.Component {
               A <strong>short primer</strong> on Conditional Tokens
             </p>
           </a>
-          <a href="/use-case" className="white-box">
+          <a href={pageUrl("use-case")} className="white-box">
             <h3>
               Use Cases
             </h3>
@@ -68,7 +69,7 @@ class HomeSplash extends React.Component {
               <strong>Deep dive</strong> into the Conditional Tokens contracts
             </p>
           </a>
-          <a href="/tutorials" className="white-box">
+          <a href={pageUrl("tutorials")} className="white-box">
             <h3>
               Tutorials
             </h3>
@@ -79,7 +80,7 @@ class HomeSplash extends React.Component {
         </div>
 
         <div className="inner index-section-last-boxes grid-blocks two-blocks-grid">
-          <a href="/#support" className="white-box">
+          <a href={pageUrl("#support")} className="white-box">
             <h3>
               Support
             </h3>
@@ -88,7 +89,7 @@ class HomeSplash extends React.Component {
             </p>
           </a>
 
-          <a href="/#projects" className="white-box">
+          <a href={pageUrl("#projects")} className="white-box">
             <h3>
               Projects
             </h3>
@@ -212,7 +213,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
 </div>
           <div className="index-support-boxes grid-blocks">
             <div id="index-support-telegram">
-              <a href="https://discordapp.com/channels/477106835862716416/477391477681684480">
+              <a href="https://discord.gg/CsFDMr">
                   Chat with us on Discord
               </a>
             </div>

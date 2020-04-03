@@ -42,7 +42,7 @@ const siteConfig = {
     {page: 'use-case', label: 'Use Case'},
     {doc: 'devguide01', label: 'Documentation'},
     {page: 'tutorials', label: 'Tutorials'},
-    {href: "/#support", label: 'Support'},
+    {href: "/conditionaltokens/#support", label: 'Support'},
   ],
 
   // If you have users set above, you add it here:
@@ -72,6 +72,8 @@ const siteConfig = {
     ]
   },
   */
+
+  gaTrackingId: process.env.GA_TACKING_ID || '',
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Gnosis LTD`,
