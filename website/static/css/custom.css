@@ -451,7 +451,7 @@ a{
    margin-bottom: 6rem;
 }
 
-#pm-infographic{
+img[alt=pm-infographic]{
    width: 70%;
 }
 

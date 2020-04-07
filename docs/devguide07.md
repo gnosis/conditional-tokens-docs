@@ -30,7 +30,7 @@ This will trigger the following event:
 
 Also look at this chart:
 
-<img src="assets/redemption.png">
+![](assets/redemption.png)
 
 
 
