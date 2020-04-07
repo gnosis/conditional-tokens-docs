@@ -186,15 +186,15 @@ Prediction markets are the main use case for conditional tokens, which the Sight
           <div className="index-projects-boxes grid-blocks three-blocks-grid">
                       
             <a href="https://alice.si/" className="white-box">
-              <img src="/img/alice.png"></img>
+              <img src={`${baseUrl}img/alice.png`}></img>
             </a>
 
             <a href="https://www.flyingcarpet.network/" className="white-box">
-              <img src="/img/flca.png"></img>
+              <img src={`${baseUrl}img/flca.png`}></img>
             </a>
 
             <a href="https://sight.pm/" className="white-box">
-              <img src="/img/gnosis.png"></img>
+              <img src={`${baseUrl}img/gnosis.png`}></img>
             </a>
             
           </div>

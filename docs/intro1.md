@@ -7,7 +7,8 @@ sidebar_label: A short primer on Conditional Tokens
 
 To better understand the reasoning behind the development of the conditional token framework, it’s helpful to understand the basic concept of a prediction market. Prediction markets—also referred to as information markets, idea futures, event derivatives, decision markets, or virtual stock markets—are exchange-traded markets where individuals stake on the outcome of an event. In blockchain-based prediction markets, participants stake on the market in the form of event contracts. These contracts specify the different possible outcomes of a future event, a payment structure based on those outcomes, and the event’s outcome date.  Unlike financial markets such as stock or commodities futures, which traders use to hedge against risk (i.e., farmers use futures markets to hedge against low crop prices, airlines use futures markets to hedge against high fuel prices), prediction markets primarily seek to aggregate information on particular topics of interest. The principal informational value of a prediction market lies in the price of the futures themselves, which not only represent the average assessment of market participants concerning the likelihood of an event’s outcome, but also the confidence level different participants have in their predictions.
 
-<img id="pm-infographic" src="/img/pm_infographic.png">
+![pm-infographic](assets/pm_infographic.png)
+
 
 Prediction markets have far-reaching potential as a prognostic tool. From weather forecasting to abating the destruction of the Great Barrier Reef, learn more about the vast range of use cases for PMs by delving into our blog posts on the topic.
 
@@ -34,16 +35,16 @@ b) No
 
 While the above markets can stand alone, they’re also explicitly correlated. In this case, there are two ways to create conditional tokens backed by a collateral token denoted as $, where the value of these conditional tokens depends on both outcomes of their respective assigned questions. In one setup, we could start by asking how the Tesla stock will evolve under the condition that Elon musk is stepping down.
 
-<img src="/img/Conditional_Token_graphics03.png">
+![](assets/Conditional_Token_graphics03.png)
 
 
 The market can also be presented in the reverse order, “Will Elon Musk step down under the condition that the Tesla Stock is below $300?”
 
-<img src="/img/Conditional_Token_graphics04.png">
+![](assets/Conditional_Token_graphics04.png)
 
 Although the outcome tokens in the second layer should represent value in collateral under the same conditions, irrespective of the order in which the conditions are specified, they are, in reality, separate entities. Users may hold separate balances of each, despite the balance being theoretically redeemable under the same conditions.
 
-<img src="/img/Conditional_Token_graphics02.png">
+![](assets/Conditional_Token_graphics02.png)
 
 <span style="color:#009cb4"><font size="3">Same, same but different! </font></span>
 
@@ -52,7 +53,7 @@ Although the outcome tokens in the second layer should represent value in collat
 The conditional tokens framework, on the other hand, circumvents this problem. Conditional tokens preserve the fungibility in deeper layers, as all conditions are held in a single contract and are not tied to a specific collateral token. Referring to the above example, the situation using conditional tokens looks more like this:
 
 
-<img src="/img/Conditional_Token_graphics01.png">
+![](assets/Conditional_Token_graphics01.png)
 
 Note the deeper outcome tokens on the far right of the diagram above, which were different in previous market set ups, are now the same. Users will hold conditional tokens in “positions.” Positions can be simple (with only one condition) or complex (relating to multiple conditions). For instance, instead of holding A and N—where A and N are outcomes of two events—you can now hold position AN, representing event N given event A has already occurred. 
 

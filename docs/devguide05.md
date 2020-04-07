@@ -31,7 +31,7 @@ Emitted when a position is successfully split.
 To decipher this function, let's consider what would be considered a
 valid split, and what would be invalid:
 
-<img src="/img/valid-vs-invalid-splits.png">
+![](assets/valid-vs-invalid-splits.png)
 
 
 
@@ -163,7 +163,7 @@ await conditionalTokens.splitPosition(
 
 The <span style="color:#DB3A3D">`$:(A|B)&(LO)`</span> position reached is the same both ways.
 
-<img src="/img/v2-cond-market-ot-compare.png">
+![](assets/v2-cond-market-ot-compare.png)
 
 ## Splits on Partial Partitions
 
@@ -192,7 +192,7 @@ position does. It burns conditional tokens in the deeper positions to
 either mint conditional tokens in a shallower position or send
 collateral to the message sender:
 
-<img src="/img/merge-positions.png">
+![](assets/merge-positions.png)
 
 To merge positions, use the following function:
 
