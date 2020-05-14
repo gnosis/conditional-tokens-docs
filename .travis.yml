@@ -42,6 +42,7 @@ deploy:
     skip_cleanup: true
     local_dir: website/build/gnosis-docs
     upload-dir: conditionaltokens
+    region: eu-central-1
     on:
       branch: develop
       node: '12'
@@ -52,6 +53,7 @@ deploy:
     skip_cleanup: true
     local_dir: website/build/gnosis-docs
     upload-dir: current/conditionaltokens
+    region: eu-central-1
     on:
       branch: master
       node: '12'
@@ -62,6 +64,7 @@ deploy:
     skip_cleanup: true
     local_dir: website/build/gnosis-docs
     upload-dir: releases/$TRAVIS_TAG
+    region: eu-central-1
     on:
       tags: true
       node: '12'
