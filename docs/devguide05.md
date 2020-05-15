@@ -8,7 +8,7 @@ Once conditions have been prepared, stake in positions contingent on these condi
 function:
 
 
-<span style="color:#009cb4">*function* **splitPosition** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldatapartition, uint amount)external*</span>
+<span style="color:#009cb4">*function* **splitPosition** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata partition, uint amount) external*</span>
 
 This function splits a position. If splitting from the collateral, this contract will attempt to transfer amount collateral from the message sender to itself. Otherwise, this contract will burn amount stake held by the message sender in the position being split worth of EIP 1155 tokens. Regardless, if successful, amount stake will be minted in the split target positions. If any of the transfers, mints, or burns fail, the transaction will revert. The transaction will also revert if the given partition is trivial, invalid, or refers to more slots than the condition is prepared with.
 
@@ -16,7 +16,7 @@ This function splits a position. If splitting from the collateral, this contract
 - **collateralToken** – The address of the positions’ backing collateral token.
 - **parentCollectionId** – The ID of the outcome collections common to the position being split and the split target positions. May be null, in which only the collateral is shared.
 - **conditionId** – The ID of the condition to split on.
-- **partition** – An array of disjoint index sets representing a nontrivial partition of the outcome slots of the given condition. E.g. A|B and C but not A|B and B|C (is not disjoint). Each element’s a number which, together with the condition, represents the outcome collection. E.g. 0b110 is A|B, 0b010 is B, etc.
+- **partition** – An array of disjoint index sets representing a nontrivial partition of the outcome slots of the given condition. E.g. A|B and C but not A|B and B|C (is not disjoint). Each element’s a number which, together with the condition, represents the outcome collection. E.g. 0b011 is A|B, 0b010 is B, etc.
 -**amount** – The amount of collateral or stake to split.
 
 
