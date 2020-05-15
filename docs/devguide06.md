@@ -10,7 +10,7 @@ addition to a holder address, each token is indexed by an ID in this
 standard. In particular, position IDs are used to index conditional
 tokens. This is reflected in the balance querying function:
 
-<span style="color:#009cb4">*function* **balanceOf** *(address owner, uint256 positionId)external view returns (uint256)*</span>
+<span style="color:#009cb4">*function* **balanceOf** *(address owner, uint256 positionId) external view returns (uint256)*</span>
 
 To transfer conditional tokens, the following functions may be used, as
 per ERC1155:
@@ -32,7 +32,7 @@ information.
 Approving an operator account to transfer conditional tokens on your
 behalf may also be done via:
 
-<span style="color:#009cb4">*function* **setApprovalForAll** *(address operator, bool approved)external*</span>
+<span style="color:#009cb4">*function* **setApprovalForAll** *(address operator, bool approved) external*</span>
 
 Querying the status of approval can be done with:
 

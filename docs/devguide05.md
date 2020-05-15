@@ -8,7 +8,7 @@ Once conditions have been prepared, stake in positions contingent on these condi
 function:
 
 
-<span style="color:#009cb4">*function* **splitPosition** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldatapartition, uint amount)external*</span>
+<span style="color:#009cb4">*function* **splitPosition** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata partition, uint amount) external*</span>
 
 This function splits a position. If splitting from the collateral, this contract will attempt to transfer amount collateral from the message sender to itself. Otherwise, this contract will burn amount stake held by the message sender in the position being split worth of EIP 1155 tokens. Regardless, if successful, amount stake will be minted in the split target positions. If any of the transfers, mints, or burns fail, the transaction will revert. The transaction will also revert if the given partition is trivial, invalid, or refers to more slots than the condition is prepared with.
 
@@ -197,10 +197,10 @@ collateral to the message sender:
 To merge positions, use the following function:
 
 
-<span style="color:#009cb4">*function* **mergePosition** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata partition, uint amount)external*</span>
+<span style="color:#009cb4">*function* **mergePosition** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata partition, uint amount) external*</span>
 
 If successful, the function will emit this event:
 
-<span style="color:#009cb4">*event* **PositionsMerge** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata partition, uint amount)external*</span>
+<span style="color:#009cb4">*event* **PositionsMerge** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata partition, uint amount) external*</span>
 
 This generalizes <span style="color:#DB3A3D">`sellAllOutcomes`</span> from Gnosis’ first prediction market contracts like <span style="color:#DB3A3D">`splitPosition`</span> generalizes <span style="color:#DB3A3D">`buyAllOutcomes`</span>.
