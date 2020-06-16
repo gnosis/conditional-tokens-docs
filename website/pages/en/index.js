@@ -200,6 +200,29 @@ Prediction markets are the main use case for conditional tokens, which the Sight
           </div>
         </div>
 
+        
+        <div className="inner index-projects-using grid-blocks two-blocks-grid">
+          <div>
+           <a name="projects">
+            <h2>
+              Analytics
+            </h2>
+            </a>
+          </div>
+          
+          <div className="index-projects-boxes grid-blocks three-blocks-grid">
+                      
+            <a href="https://defipulse.com" className="white-box">
+              <strong>DeFi Pulse</strong>
+            </a>
+
+            <span className="white-box">
+              More coming soon...
+            </span>
+
+          </div>
+        </div>
+
         <div className="inner index-support grid-blocks two-blocks-grid">
           <div>
             <a name="support">
