@@ -32,13 +32,13 @@ class HomeSplash extends React.Component {
     return (
       <SplashContainer>
         <div className="inner index-info-block grid-blocks two-blocks-grid">
-          <div 
+          <div
           className="index-info-block-title">
             Create conditional tokens: a new asset class with rich informational capabilities, making the outcome of any future event tradable.
           </div>
           <div className="index-info-block-text">
             <p>
-            The conditional tokens developer portal aims to provide an overview of the open framework.</p> 
+            The conditional tokens developer portal aims to provide an overview of the open framework.</p>
             <p>It’s a place where you can explore different use cases for conditional tokens, as well as detailed tutorials on how to encode conditionality and liquidity into your own dapps and prediction markets.
             </p>
           </div>
@@ -146,7 +146,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
               </h3>
               <p>
                 Work with the <strong>right oracle for the right question protocol</strong> is not tied to any specific oracle.
-             
+
               </p>
             </a>
 
@@ -155,7 +155,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
                 ERC 1155 tokens
               </h3>
               <p>
-               Allow batch transfers and receiver callbacks and <strong> avoid costly outcome token deployments</strong> for new events. 
+               Allow batch transfers and receiver callbacks and <strong> avoid costly outcome token deployments</strong> for new events.
               </p>
             </a>
 
@@ -164,7 +164,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
                 Audited contracts
               </h3>
               <p>
-                Cut costs on development <strong>without sacrificing security</strong>. 
+                Cut costs on development <strong>without sacrificing security</strong>.
               </p>
             </a>
           </div>
@@ -184,7 +184,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
           </div>
 
           <div className="index-projects-boxes grid-blocks three-blocks-grid">
-                      
+
             <a href="https://alice.si/" className="white-box">
               <img src={`${baseUrl}img/alice.png`}></img>
             </a>
@@ -196,11 +196,11 @@ Prediction markets are the main use case for conditional tokens, which the Sight
             <a href="https://sight.pm/" className="white-box">
               <img src={`${baseUrl}img/gnosis.png`}></img>
             </a>
-            
+
           </div>
         </div>
 
-        
+
         <div className="inner index-projects-using grid-blocks two-blocks-grid">
           <div>
            <a name="projects">
@@ -209,9 +209,9 @@ Prediction markets are the main use case for conditional tokens, which the Sight
             </h2>
             </a>
           </div>
-          
+
           <div className="index-projects-boxes grid-blocks three-blocks-grid">
-                      
+
             <a href="https://defipulse.com" className="white-box">
               <strong>DeFi Pulse</strong>
             </a>
@@ -236,7 +236,7 @@ Prediction markets are the main use case for conditional tokens, which the Sight
 </div>
           <div className="index-support-boxes grid-blocks">
             <div id="index-support-telegram">
-              <a href="https://discord.gg/CsFDMr">
+              <a href="https://discord.com/channels/477106835862716416/477390962331484160">
                   Chat with us on Discord
               </a>
             </div>
