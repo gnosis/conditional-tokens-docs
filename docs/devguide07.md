@@ -21,7 +21,7 @@ This will emit the following event:
 
 Then positions containing this condition can be redeemed via:
 
-<span style="color:#009cb4">*event* **redeemPositions** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata indexSets)external*</span>
+<span style="color:#009cb4">*event* **redeemPositions** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata indexSets) external*</span>
 
 
 This will trigger the following event:

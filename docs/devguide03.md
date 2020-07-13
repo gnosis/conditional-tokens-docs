@@ -187,7 +187,7 @@ birthday attack](https://link.springer.com/chapter/10.1007/3-540-45708-9_19).**<
 Similar to with conditions, the contract and the `CTHelpers` library
 also provide helper functions for calculating outcome collection IDs:
 
-<span style="color:#009cb4">*function* **getCollectionId** *(bytes32 parentCollectionId, bytes32 conditionId, uint indexSet)externalviewreturns(bytes32)*</span>
+<span style="color:#009cb4">*function* **getCollectionId** *(bytes32 parentCollectionId, bytes32 conditionId, uint indexSet) external view returns (bytes32)*</span>
 	
 Constructs an outcome collection ID from a parent collection and an outcome collection.
 
