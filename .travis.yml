@@ -52,7 +52,7 @@ deploy:
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     skip_cleanup: true
     local_dir: website/build/gnosis-docs
-    upload-dir: current/conditionaltokens
+    upload-dir: current
     region: eu-central-1
     on:
       branch: master
