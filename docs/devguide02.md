@@ -10,7 +10,7 @@ oracle in a particular manner. The following function may be used to
 prepare a condition:
 
 
-<span style="color:#009cb4">*function* **prepareCondition** *(address oracle, bytes32 questionId, uint outcomeSlotCount)external*</span>
+<span style="color:#009cb4">*function* **prepareCondition** *(address oracle, bytes32 questionId, uint outcomeSlotCount) external*</span>
 
 This function prepares a condition by initializing a payout vector associated with the condition.
 
@@ -54,7 +54,7 @@ To determine if, given a condition’s ID, a condition has been prepared,
 or to find out a condition’s outcome slot count, use the following
 accessor:
 
-<span style="color:#009cb4">*function* **getOutcomeSlotCount** *(bytes32 conditionId)externalviewreturns(uint)*</span>
+<span style="color:#009cb4">*function* **getOutcomeSlotCount** *(bytes32 conditionId) external view returns (uint)*</span>
 Gets the outcome slot count of a condition.
 
 Parameters:	**conditionId** – ID of the condition.
@@ -113,7 +113,7 @@ web3.utils.soliditySha3({
 A helper function for determining the condition ID also exists on both
 the contract and the <span style="color:#001428">`CTHelpers` </span>   library:
 
-<span style="color:#009cb4">*function* **getConditionId** *(address oracle, bytes32 questionId,uintoutcomeSlotCount)externalpurereturns(bytes32)*</span>
+<span style="color:#009cb4">*function* **getConditionId** *(address oracle, bytes32 questionId, uint outcomeSlotCount) external pure returns (bytes32)*</span>
 
 Constructs a condition ID from an oracle, a question ID, and the outcome slot count for the question.
 

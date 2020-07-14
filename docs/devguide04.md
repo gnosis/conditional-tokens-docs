@@ -48,7 +48,7 @@ and <span style="color:#DB3A3D">`$:(A|B)&(LO)`</span> has an ID of
 
 Helper functions for calculating positions also exist:
 
-<span style="color:#009cb4">*function* **getPositionId** *(IERC20 collateralToken, bytes32 collectionId)externalpurereturns (uint)*</span>
+<span style="color:#009cb4">*function* **getPositionId** *(IERC20 collateralToken, bytes32 collectionId) external pure returns (uint)*</span>
 
 Constructs a position ID from a collateral token and an outcome collection. These IDs are used as the ERC-1155 ID for this contract.
 
