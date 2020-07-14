@@ -10,7 +10,7 @@ Before this is possible, the payout vector must be set by the oracle:
 
 Called by the oracle for reporting results of conditions. Will set the payout vector for the condition with the ID keccak256(abi.encodePacked(oracle, questionId, outcomeSlotCount)), where oracle is the message sender, questionId is one of the parameters of this function, and outcomeSlotCount is the length of the payouts parameter, which contains the payoutNumerators for each outcome slot of the condition.
 
-**Parameters:**	
+**Parameters:**
 
 - **questionId** – The question ID the oracle is answering for
 - **payouts** – The oracle’s answer
@@ -21,7 +21,7 @@ This will emit the following event:
 
 Then positions containing this condition can be redeemed via:
 
-<span style="color:#009cb4">*event* **redeemPositions** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata indexSets) external*</span>
+<span style="color:#009cb4">*function* **redeemPositions** *(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata indexSets)external*</span>
 
 
 This will trigger the following event:
@@ -31,7 +31,3 @@ This will trigger the following event:
 Also look at this chart:
 
 ![](assets/redemption.png)
-
-
-
-

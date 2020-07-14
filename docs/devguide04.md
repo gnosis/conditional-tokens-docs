@@ -60,4 +60,4 @@ All the positions backed by DollaCoin which depend on the example
 categorical condition and the example scalar condition form a DAG
 (directed acyclic graph):
 
-!(assets/all-positions-from-two-conditions.png")
+![](assets/all-positions-from-two-conditions.png)
