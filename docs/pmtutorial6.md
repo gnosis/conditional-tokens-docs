@@ -33,7 +33,7 @@ event AMMOutcomeTokenTrade(
 
 ## Buying outcome tokens
 
-In the `Market.ts` file it is defined the function to buy outcome tokens:
+The function to buy outcome tokens is defined in `Market.ts`:
 ```
 const buy = async () => {
   const collateral = await marketMakersRepo.getCollateralToken()
@@ -63,7 +63,7 @@ const buy = async () => {
 
 ## Selling outcome tokens
 
-In the `Market.ts` file it is defined the function to sell outcome tokens:
+The function to sell outcome tokens is defined in `Market.ts`:
 ```
 const sell = async () => {
   const collateral = await marketMakersRepo.getCollateralToken()
@@ -84,4 +84,3 @@ const sell = async () => {
   const tx = await marketMakersRepo.trade(outcomeTokenAmounts, profit, account)
 }
 ```
-

@@ -31,19 +31,6 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <div className="inner index-info-block grid-blocks two-blocks-grid">
-          <div
-          className="index-info-block-title">
-            Create conditional tokens: a new asset class with rich informational capabilities, making the outcome of any future event tradable.
-          </div>
-          <div className="index-info-block-text">
-            <p>
-            The conditional tokens developer portal aims to provide an overview of the open framework.</p>
-            <p>It’s a place where you can explore different use cases for conditional tokens, as well as detailed tutorials on how to encode conditionality and liquidity into your own dapps and prediction markets.
-            </p>
-          </div>
-        </div>
-
         <div className="inner index-section-boxes grid-blocks four-blocks-grid">
           <a href={docUrl("introduction1")} className="white-box">
             <h3>
@@ -79,26 +66,6 @@ class HomeSplash extends React.Component {
           </a>
         </div>
 
-        <div className="inner index-section-last-boxes grid-blocks two-blocks-grid">
-          <a href={pageUrl("#support")} className="white-box">
-            <h3>
-              Support
-            </h3>
-            <p>
-              Need some <strong>help</strong>? Reach out to us!
-            </p>
-          </a>
-
-          <a href={pageUrl("#projects")} className="white-box">
-            <h3>
-              Projects
-            </h3>
-            <p>
-              <strong>Explore</strong> existing Conditional Token applications
-            </p>
-          </a>
-        </div>
-
         <div className="inner index-what-are grid-blocks two-blocks-grid">
           <div>
             <h2>
@@ -106,9 +73,9 @@ class HomeSplash extends React.Component {
             </h2>
           </div>
           <div>
-          <p> Gnosis has developed the conditional tokens open framework. Conditional tokens are an application agnostic, new asset class designed to facilitate the creation of highly liquid prediction markets. Conditional tokens enable combinatorial outcomes for higher resolution information discovery through prediction markets.</p>
+          <p>Conditional Tokens are a new, application-agnostic, asset class designed to facilitate the creation of highly liquid prediction markets. They enable combinatorial outcomes for high resolution information discovery through prediction markets.</p>
 <p>
-The conditional tokens framework allows you to:
+The Conditional Tokens Framework allows you to:
 </p>
 <p>
 <ul>
@@ -118,7 +85,7 @@ The conditional tokens framework allows you to:
 </ul>
 </p>
 <p>
-Prediction markets are the main use case for conditional tokens, which the Sight prediction market platform and other Gnosis Ecosystem projects build on. Conditional tokens have a wide range of additional use cases, from awarding access rights in games to paying milestone-based and social impact bonds. </p>
+Prediction markets are the main use case for Conditional Tokens, Omen and Polimarket are two examples of projects built on the Conditional Tokens Framework. Conditional tokens have a wide range of additional use cases, from awarding access rights in games to paying milestone-based and social impact bonds. </p>
 
           </div>
         </div>
@@ -177,13 +144,14 @@ Prediction markets are the main use case for conditional tokens, which the Sight
               Projects using<br></br>Conditional Tokens
             </h2>
             </a>
-            <p>
-              Conditional Tokens are already used by those projects.
-            </p>
 
           </div>
 
           <div className="index-projects-boxes grid-blocks three-blocks-grid">
+
+            <a href="https://omen.eth.link/" className="white-box">
+              <img src={`${baseUrl}img/omen.png`}></img>
+            </a>
 
             <a href="https://alice.si/" className="white-box">
               <img src={`${baseUrl}img/alice.png`}></img>
@@ -191,10 +159,6 @@ Prediction markets are the main use case for conditional tokens, which the Sight
 
             <a href="https://www.flyingcarpet.network/" className="white-box">
               <img src={`${baseUrl}img/flca.png`}></img>
-            </a>
-
-            <a href="https://sight.pm/" className="white-box">
-              <img src={`${baseUrl}img/gnosis.png`}></img>
             </a>
 
           </div>
@@ -216,34 +180,8 @@ Prediction markets are the main use case for conditional tokens, which the Sight
               <strong>DeFi Pulse</strong>
             </a>
 
-            <span className="white-box">
-              More coming soon...
-            </span>
-
           </div>
         </div>
-
-        <div className="inner index-support grid-blocks two-blocks-grid">
-          <div>
-            <a name="support">
-              <h2>
-                Support<br></br>and Community
-              </h2>
-            </a>
-            <p>
-              Reach out to us!
-            </p>
-</div>
-          <div className="index-support-boxes grid-blocks">
-            <div id="index-support-telegram">
-              <a href="https://discord.com/channels/477106835862716416/477390962331484160">
-                  Chat with us on Discord
-              </a>
-            </div>
-          </div>
-        </div>
-
-
               </SplashContainer>
     );
   }
