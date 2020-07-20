@@ -61,7 +61,7 @@ event ConditionResolution(
 );
 ```
 
-In the `Market.ts` file it is defined the function to resolve the market:
+The function to resolve a market is defined in `Market.ts`:
 ```
 const resolve = async (resolutionOutcomeIndex: number) => {
   const payouts = Array.from(

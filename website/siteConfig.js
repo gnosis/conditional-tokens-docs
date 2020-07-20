@@ -42,7 +42,7 @@ const siteConfig = {
     {page: 'use-case', label: 'Use Case'},
     {doc: 'devguide01', label: 'Documentation'},
     {page: 'tutorials', label: 'Tutorials'},
-    {href: "/conditionaltokens/#support", label: 'Support'},
+    {href: 'https://discord.gg/dzrPdQh', label: 'Support', external: true},
   ],
 
   // If you have users set above, you add it here:

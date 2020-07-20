@@ -45,14 +45,14 @@ be composed in a single outcome collection.
 
 ## Index Set Representation and Identifier Derivation
 
-A outcome collection may be represented by an a condition and an *index
+An outcome collection may be represented by a condition and an *index
 set*. This is a 256 bit array which denotes which outcome slots are
-present in a outcome collection. For example, the value `3 == 0b011`
+present in an outcome collection. For example, the value `3 == 0b011`
 corresponds to the outcome collection <span style="color:#DB3A3D">`(A|B)`</span>, whereas the value <span style="color:#DB3A3D">`4
 == 0b100`</span> corresponds to <span style="color:#DB3A3D">`(C)`</span>. Note that the indices start at the
 lowest bit in a <span style="color:#DB3A3D">`uint`</span>.
 
-A outcome collection may be identified with a 32 byte value called a
+An outcome collection may be identified with a 32 byte value called a
 *collection identifier*. Calculating the collection ID for an outcome
 collection involves hashing its condition ID and index set into a point
 on the [alt\_bn128](https://eips.ethereum.org/EIPS/eip-196) elliptic curve.
@@ -65,7 +65,7 @@ must be performed:
 1.  An initial value for the point x-coordinate is set by hashing the
     condition ID and the index set of the outcome collection, and
     interpreting the resulting hash as a big-endian integer.
-    
+
     ``` js
     web3.utils.soliditySha3({
         // See section "A Categorical Example" for derivation of this condition ID
@@ -76,49 +76,49 @@ must be performed:
         v: 0b011 // Binary Number literals supported in newer versions of JavaScript
     })
     ```
-    
+
     This results in an initial x-coordinate of
     <span style="color:#DB3A3D">`0x52ff54f0f5616e34a2d4f56fb68ab4cc636bf0d92111de74d1ec99040a8da118`</span>,
     or  <span style="color:#DB3A3D">`37540785828268254412066351790903087640191294994197155621611396915481249947928`</span>.
 
-	An <span style="color:#DB3A3D">`odd`</span>. flag is set according to whether the highest bit of the hash
+	An <span style="color:#DB3A3D">`odd`</span> flag is set according to whether the highest bit of the hash
 	result is set. In this case, because the highest bit of the hashing
 	result is not set,<span style="color:#DB3A3D">`odd = false`</span>.
- 
+
 2.  The x-coordinate gets incremented by one modulo the order of the
      [alt\_bn128](https://eips.ethereum.org/EIPS/eip-196) base field, which is
      <span style="color:#DB3A3D">`21888242871839275222246405745257275088696311157297823662689037894645226208583`</span>.
-      
+
      The first time, this results in an updated x-coordinate <span style="color:#DB3A3D">`x= 15652542956428979189819946045645812551494983836899331958922359020836023739346`</span>.
- 
+
  3.  The x-coordinate is checked to see if it is the x-coordinate of
      points on the elliptic curve. Specifically, <span style="color:#DB3A3D">`x**3 + 3`</span> gets
      computed in the base field, and if the result is a quadratic
       residue, the x-coordinate belongs to a pair of points on the
      elliptic curve. If the result is a non-residue however, return
      to step 2.
-     
+
      When <span style="color:#DB3A3D">`x= 15652542956428979189819946045645812551494983836899331958922359020836023739346`</span>,
      <span style="color:#DB3A3D">`x**3 + 3
      == 7181824697751204416624405172148440000524665091599802536460745194285959874882`</span>
      is not a quadratic residue in the base field, so go back to step 2.
-     
+
      When <span style="color:#DB3A3D">`x= 15652542956428979189819946045645812551494983836899331958922359020836023739347`</span>,
      <span style="color:#DB3A3D">`x**3 + 3== 19234863727839675005817902755221636205208068129817953505352549927470359854418`</span>
      is also not a quadratic residue in the base field, so go back to
      step 2.
-     
+
      When <span style="color:#DB3A3D">`x= 15652542956428979189819946045645812551494983836899331958922359020836023739348`</span>,
      <span style="color:#DB3A3D">`x**3 + 3
      == 15761946137305644622699047885883332275379818402942977914333319312444771227121`</span>
      is still not a quadratic residue in the base field, so go back
      to step 2.
-     
+
      When <span style="color:#DB3A3D">`x= 15652542956428979189819946045645812551494983836899331958922359020836023739349`</span>,
      <span style="color:#DB3A3D">`x**3 + 3 == 18651314797988388489514246309390803299736227068272699426092091243854420201580`</span>
      is a quadratic residue in the base field, so we have found a
      pair of points on the curve, and we may continue.
- 
+
  4.  Note that the base field occupies 254 bits of space, meaning the
      x-coordinate we found also occupies 254 bits of space, and has
      two free bits in an EVM word (256 bits). Leave the highest bit
@@ -143,23 +143,23 @@ following manner:
     coordinates. Take the low 254 bits as the x-coordinate, and pick the
     y-coordinate which is even or odd depending on the value of the
     second highest bit.
-    
+
       - <span style="color:#DB3A3D">`(A|B)`</span>, which has a collection ID of
         <span style="color:#DB3A3D">`0x229b067e142fce0aea84afb935095c6ecbea8647b8a013e795cc0ced3210a3d5`</span>,
         gets decompressed to the point:
-        
+
             (15652542956428979189819946045645812551494983836899331958922359020836023739349,
             11459896044816691076313215195950563425899182565928550352639564868174527712586)
-        
+
         Note the even y-coordinate is chosen here.
-    
+
       - <span style="color:#DB3A3D">`(LO)`</span>, which has a collection ID of
         <span style="color:#DB3A3D">`0x560ae373ed304932b6f424c8a243842092c117645533390a3c1c95ff481587c2`</span>,
         gets decompressed to the point:
-        
+
             (9970120961273109372766525305441055537695652051815636823675568206550524069826,
             5871835597783351455285190273403665696556137392019654883787357811704360229175)
-        
+
         The odd y-coordinate indication bit was chopped off the
         compressed form before its use as the decompressed form's
         x-coordinate, and the odd y-coordinate is chosen here.
@@ -167,7 +167,7 @@ following manner:
 2.  Perform point addition on the
     [alt\_bn128](https://eips.ethereum.org/EIPS/eip-196) curve with
     these points. The sum of these points is the point:
-    
+
         (21460418698095194776649446887647175906168566678584695492252634897075584178441,
         4596536621806896659272941037410436605631447622293229168614769592376282983323)
 
@@ -188,10 +188,10 @@ Similar to with conditions, the contract and the `CTHelpers` library
 also provide helper functions for calculating outcome collection IDs:
 
 <span style="color:#009cb4">*function* **getCollectionId** *(bytes32 parentCollectionId, bytes32 conditionId, uint indexSet) external view returns (bytes32)*</span>
-	
+
 Constructs an outcome collection ID from a parent collection and an outcome collection.
 
-**Parameters:**	
+**Parameters:**
 - **parentCollectionId** – Collection ID of the parent outcome collection, or bytes32(0) if there’s no parent.
 - **conditionId** – Condition ID of the outcome collection to combine with the parent outcome collection.
 - **indexSet** – Index set of the outcome collection to combine with the parent outcome collection.
