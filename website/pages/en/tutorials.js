@@ -32,14 +32,14 @@ function Tutorial(props) {
             </p>
           </div>
         </div>
-       
+
         <div className="inner grid-blocks four-blocks-grid tutorials-boxes">
           <a href={docUrl("pmtutorial1")} className="white-box">
             <h3>
              Set up a prediction market in 30min
             </h3>
             <p>
-              How to set up a binary prediction market with the conditional token framework in 30min. 
+              How to set up a binary prediction market with the conditional token framework in 30min.
             </p>
             <p className="box-icons">
               <i className="icon icon-small icon-time"></i>
@@ -58,18 +58,10 @@ function Tutorial(props) {
           </a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeP0Y0bIT1c4YW1W-nJqWYwImGzOhmUExIN8p3myvQAwOGNbg/viewform"  className="white-box">
             <h3>
-              Looking for a specific tutorial? 
+              Looking for a specific tutorial?
             </h3>
             <p>
              Reach out to us and tell us what tutorial you would like to see here.
-            </p>
-          </a>
-          <a className="white-box">
-            <h3>
-              To be continued...
-            </h3>
-            <p>
-             More tutorials will be added over time. Make sure to come back and learn more about Conditional Tokens.
             </p>
           </a>
         </div>

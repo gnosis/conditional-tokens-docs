@@ -46,7 +46,7 @@ event PayoutRedemption(
 );
 ```
 
-In the `Market.ts` file it is defined the function to redeem the positions of the trader:
+The function to redeem positions is defined in `Market.ts`:
 ```
 const redeem = async () => {
   const collateral = await marketMakersRepo.getCollateralToken()
