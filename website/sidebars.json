@@ -10,5 +10,8 @@
   },
   "Game": {
   	"Tokens, Gaming, and Forking Gardens": ["game1", "game2"]
+  },
+  "Game": {
+    "Conditional Tokes Tutorial": ["ctftutorial01", "ctftutorial02"]
   }
 }
