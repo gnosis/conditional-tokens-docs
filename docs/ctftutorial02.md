@@ -32,7 +32,7 @@ The canonical addresses for the contracts on some existing networks:
 ## Deploy ERC20 Tokens
 Let's begin by creating a couple of ERC20 toy tokens to illustrate how different ERC20 tokens can be used with the same conditional tokens contracts.
 
-In the "deploy and run" module, deploy two instances of the `ToyToken`. You can give them any name and symbol you like.
+In the "deploy and run" module, deploy two instances of the `ToyToken`. You can give them any name and symbol you like, just make them unqique so that we can reference them later.
 
 ![deploy ToyToken](assets/deploy_ToyToken.png)
 
