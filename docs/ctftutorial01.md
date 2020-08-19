@@ -1,20 +1,20 @@
 ---
 id: ctftutorial01
-title: Conditional Tokens Tutorial
+title: Introduction
 sidebar_label: Introduction
-keywords: ethereum, blockchain, conditional tokens, prediction markets, ERC1155, ERC-1155, ERC20, ERC-20
 description:
-image:
 ---
 <div class="resp-container">
-    <iframe class="resp-iframe" src="https://www.youtube.com/embed/S_TMENtVtcs" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+    <iframe class="resp-iframe" src="https://www.youtube-nocookie.com/embed/uZNWq07Y4Ag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<br/>
+---
 
-## Introduction
 Welcome to the conditional tokens tutorial. In this tutorial we will use [remix](https://remix.ethereum.org) (a browser based integrated development environment tailored for ethereum development) and this [gist](https://gist.github.com/cag/65dc3ddfa03f067dd41ca7121ee3120f) to explore the conditional tokens contracts. Along the way, we will explain some of the design choices that were made and what conditional tokens allow you to do.
 
+This tutorial will take about an hour and a half. There is also a follow along video at the top of each page.
+
+## Introduction
 First off, what are conditional tokens?
 
 In a nut shell conditional tokens enable prediction markets; markets about the outcome of any future event. They allow agents to aggregate beliefs about the future.
@@ -25,4 +25,8 @@ There may use cases that are enabled by conditional tokens, but today will only 
 
 ## Resources
 * [Remix](https://remix.ethereum.org)
-* [Gist](https://gist.github.com/cag/65dc3ddfa03f067dd41ca7121ee3120f)
+* [GitHub Gist](https://gist.github.com/cag/65dc3ddfa03f067dd41ca7121ee3120f)
+
+---
+
+Let's go ahead and get set up!
