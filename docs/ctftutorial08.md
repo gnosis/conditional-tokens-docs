@@ -20,19 +20,21 @@ Looking at the below image of positions, you'll notice a second layer of positio
 
 ![Splitting Unions](assets/v2-cond-market-slots-only.png)
 
-To split a position into the deeper positions, you will pass in the `collectionId` of one of your positions, instead of `0x0`.
-
 A simple example, using our previous positions, would be to split `(B|C)` into `(B)` and `(C)`. You can try this split with the current state of the conditional tokens contract on your development chain.
 
-To do this, we will keep the `collateralToken` the same, using the address of one of your ToyTokens.
+To do this, we will call `splitPosition()`, keeping the `collateralToken` the same using using the address of one of your ToyTokens.
 
-We will also keep the `parentCollectionId` the same. The parent collection ID can be roughly thought of as the next level up.
+We will also keep the `parentCollectionId` the same, `0x0`. The parent collection ID can be roughly thought of as the next level up.
 
 We'll keep the `conditionId` the same as well, because that is the condition that outcome collections containing only `(B)` and only `(C)`.
 
 Change that occurs here is in the partition. We want to figure out the index set values for only B and only C. With the process noted earlier, we can find those values. For example, the index set for the outcome collection containing only `(B)` is `2`, and the index set for the outcome collection containing only `(C)` is `(4)`.
 
 Since this does not cover all of the outcome slots in the condition, the split will actually look for value in the position `(B|C)` instead of trying to get value from one level up, or in this case is from the collateral token.
+
+Try calling `splitPosition()` to split a portion of your `(B|C)` position into `(B)` and `(C)`.
+
+Using the same method as earlier, you should be able to derive the `positionId` for these new positions and check your balance of positions `(B|C)`, `(B)`, and `(C)`.
 
 ---
 
