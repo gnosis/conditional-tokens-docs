@@ -23,4 +23,6 @@ First, let's merge conditional tokens representing `(A)` and conditional tokens 
 
 After merging `(A)` and `(B|C)` into their underlying collateral token, try merging. `(A) & (high)` and `(A) and (low)` to receive the underlying positions `(A)`,`(high)`, and `(low)`.
 
+Try calling `balanceOfBatch()` with each of the position IDs before and after each merge to see how it affects the balances of your positions.
+
 ---
