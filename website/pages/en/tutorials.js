@@ -34,6 +34,28 @@ function Tutorial(props) {
         </div>
 
         <div className="inner grid-blocks four-blocks-grid tutorials-boxes">
+          <a href={docUrl("ctftutorial01")} className="white-box">
+            <h3>
+             Conditional Tokens Explainer
+            </h3>
+            <p>
+              A walkthrough of the conditional tokens contracts and how to interact with them.
+            </p>
+            <p className="box-icons">
+              <i className="icon icon-small icon-time"></i>
+              &nbsp;
+              60-90 minutes
+              &nbsp;
+              &nbsp;
+              <i className="icon icon-small icon-star"></i>
+              &nbsp;
+              easy
+              &nbsp;
+              &nbsp;
+              <i className="icon icon-small icon-pen"></i>
+              Solidity
+            </p>
+          </a>
           <a href={docUrl("pmtutorial1")} className="white-box">
             <h3>
              Set up a prediction market in 30min
