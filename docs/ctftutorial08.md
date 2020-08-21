@@ -34,8 +34,6 @@ Change that occurs here is in the partition. We want to figure out the index set
 
 Since this does not cover all of the outcome slots in the condition, the split will actually look for value in the position `(B|C)` instead of trying to get value from one level up, or in this case is from the collateral token.
 
-Try calling `splitPosition()` to create several deeper combinations of positions. For example to create the position `(A & high)`, you could use the `collectionId` of `(A)` for the `parantCollectionId` parameter, the `conditionId` of `(high)`, and the index set of `(A)` which is `[1]`. You can use the above images for inspiration on other splits that are possible.
-
 ---
 
-Now that we've learned how to split collateral positions and positions into deeper positions, the section will cover merging those positions into their underlying collateral or positions.
+In the next sections, we'll cover combining outcome collections and splitting into deeper positions.
