@@ -18,7 +18,7 @@ Here is an example of some valid and invalid splits, either from collateral ($) 
 
 Looking at the below image of positions, you'll notice a second layer of positions, this tied very closely to the parent collection ID parameter. When we passed in `0x0` as the parent `collectionId` what we are telling the contract is we would like to start from the root collection or the collateral token directly.
 
-![Splitting Unions](assets/v2-cond-market-slots-only.png)
+![Splitting](assets/v2-cond-market-slots-only.png)
 
 A simple example, using our previous positions, would be to split `(B|C)` into `(B)` and `(C)`. You can try this split with the current state of the conditional tokens contract on your development chain.
 

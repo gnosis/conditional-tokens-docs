@@ -12,7 +12,7 @@ description:
 
 To this point we've been supplying zeros as our parent `collectionId` this whole time. What this means is that we're only talking about a first level of positions. However, another important feature of the condition tokens is the ability to combine many different conditions in a single position. As in the image below.
 
-![Splitting Unions](assets/v2-cond-market-slots-only.png)
+![Splitting](assets/v2-cond-market-slots-only.png)
 
 Let's say we want to create the position `(A) & (hi)`. We can use the `getCollection()` function to find the `collectionId`
 
