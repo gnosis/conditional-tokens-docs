@@ -5,12 +5,12 @@ sidebar_label: Splitting Unions
 description:
 ---
 <div class="resp-container">
-    <iframe class="resp-iframe" src="https://www.youtube-nocookie.com/embed/uZNWq07Y4Ag?start=705" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="resp-iframe" src="https://www.youtube-nocookie.com/embed/uZNWq07Y4Ag?start=2296" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---
 
-Previously, we split collateral into positions. But the conditional tokens framework also allows us to create combinations of conditions.
+Previously, we split collateral into positions `(A)` and `(B|C)`. But we there are many more valid splits we can make with the conditions we have created.
 
 Here is an example of some valid and invalid splits, either from collateral ($) or from other positions.
 
