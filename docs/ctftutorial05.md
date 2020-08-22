@@ -47,7 +47,7 @@ And `6` for the index set, as derived above.
 Make a note of this collection ID and follow the same steps for an outcome collection containing only one outcome slot. For example, the outcome slot A. The index set associated with the outcome collection with only the Outcome slot A can be found to be the integer one.
 
 
-Similarly, for the second condition that you prepared earlier, we can give these conditions outcome slots names as well. We will call the first outcome slot `low` and the second outcome slot `high` and will consider two outcome collections based off of this condition; the outcome collection with only `low` and the outcome collection with only `high`.
+Similarly, for the second condition that you prepared earlier, we can give these conditions outcome slots names as well. We will call the first outcome slot `low` and the second outcome slot `hi` and will consider two outcome collections based off of this condition; the outcome collection with only `low` and the outcome collection with only `hi`.
 
 ```
 Outcome low, hi
@@ -57,7 +57,7 @@ Outcome low, hi
 
 *Note that while the outcome collection of Only Low may have the same index set as the outcome collection for only A, it differs in the condition as used to derive this outcome collection.*
 
-follow the same steps as earlier to derive collection IDs for `low` and `high`, remembering to use the condition ID for the second condition you created earlier.
+follow the same steps as earlier to derive collection IDs for `low` and `hi`, remembering to use the condition ID for the second condition you created earlier.
 
 ---
 

@@ -18,22 +18,22 @@ Let's say we want to create the position `(A) & (hi)`. We can use the `getCollec
 
 Specify the `collectionId` for the collection of outcome slot `(A)` by itself as a `parentcollectionId`.
 
-Then we specify the `conditionId` for the other condition, the second condition that we prepared, which has two outcome slots `(lo)` and `(high)`.
+Then we specify the `conditionId` for the other condition, the second condition that we prepared, which has two outcome slots `(lo)` and `(hi)`.
 
-Finally, we specify an index set that represents the index set for only the outcome slot `(high)`, which is `2`.
+Finally, we specify an index set that represents the index set for only the outcome slot `(hi)`, which is `2`.
 
-In this case, we end up with a position that you can really call `(A) & (high)`, this is the position that pays out the collateral if both `(A)` occurs and `(high)` occurs.
+In this case, we end up with a position that you can really call `(A) & (hi)`, this is the position that pays out the collateral if both `(A)` occurs and `(hi)` occurs.
 
-Note that you can derive the same positionId for `(A) & (high)` by using the `collectionId` of `(high)`, the `conditionId` of the condition with outcome slots `A`, `B,`, and `C`, and the index set `[1]` which corresponds with `(high)`.
+Note that you can derive the same positionId for `(A) & (hi)` by using the `collectionId` of `(hi)`, the `conditionId` of the condition with outcome slots `A`, `B,`, and `C`, and the index set `[1]` which corresponds with `(hi)`.
 
 Find and note the `collectionID` for these positions.
 ```
-(A) & (high)
+(A) & (hi)
 (A) & (lo)
-(B) & (high)
+(B) & (hi)
 (B) & (lo)
-(B|C) & (high)
-(B|C) & (high)
+(B|C) & (hi)
+(B|C) & (hi)
 ```
 
 From this, you can derive the `positionId` of each collection using their `collectionId` and the address of each collateral token.

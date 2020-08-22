@@ -34,7 +34,7 @@ The `partion` parameter in `splitPosition()` is the only one we haven't encounte
 
 You can check the balance of your positions using the `balanceOf()` or `balanceOfBatch()` functions, with your `address` and the `positionId`s of your positions as parameters.
 
-Repeat these steps to create the same set of positions with your other ToyToken, and then repeat the steps to create the positions `(lo)` and `(high)` in your second condition with each of your ToyTokens as collateral.
+Repeat these steps to create the same set of positions with your other ToyToken, and then repeat the steps to create the positions `(lo)` and `(hi)` in your second condition with each of your ToyTokens as collateral.
 
 When you're done, you should have eight positions.
 ```
@@ -43,9 +43,9 @@ T1(B|C)
 T2(A)
 T2(B|C)
 T1(lo)
-T1(high)
+T1(hi)
 T2(lo)
-T2(high)
+T2(hi)
 ```
 
 Call `balanceOfBatch()` on your conditional tokens contract to check the balances of each in one function call.

@@ -21,7 +21,7 @@ First, let's merge conditional tokens representing `(A)` and conditional tokens 
 * `partition`: an array of outcome index sets that define how the outcome slots have been partitioned.
 * `amount`: the amount of each position that you are merging.
 
-After merging `(A)` and `(B|C)` into their underlying collateral token, try merging. `(A) & (high)` and `(A) and (low)` to receive the underlying positions `(A)`,`(high)`, and `(low)`.
+After merging `(A)` and `(B|C)` into their underlying collateral token, try merging. `(A) & (hi)` and `(A) and (low)` to receive the underlying positions `(A)`,`(hi)`, and `(low)`.
 
 Try calling `balanceOfBatch()` with each of the position IDs before and after each merge to see how it affects the balances of your positions.
 

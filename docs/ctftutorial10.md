@@ -16,9 +16,9 @@ Now we will return to split position in order to create a stake in these deeper 
 
 You can call `balaceOfBatch()` to get the balance of each of the `positionId`s you have derived thus far.
 
-Let's split your position in `(A)` into positions in `(A) & (high)` and `(A) & (lo)`.
+Let's split your position in `(A)` into positions in `(A) & (hi)` and `(A) & (lo)`.
 
-We'll call the `splitPosition()` function, with use the address of one of your ToyTokens as `collateralToken`, the `collectionId` of `(A)` as `parentCollectionId`, the `conditionId` of the condition with outcome slots `(high) & (lo)`, the index sets for `(high)` and `(low)` for the `partition` (`[1,2]`), and finally the `amount` that you want to split.
+We'll call the `splitPosition()` function, with use the address of one of your ToyTokens as `collateralToken`, the `collectionId` of `(A)` as `parentCollectionId`, the `conditionId` of the condition with outcome slots `(hi) & (lo)`, the index sets for `(hi)` and `(low)` for the `partition` (`[1,2]`), and finally the `amount` that you want to split.
 
 Call `balanceOfBatch()` again to see how your balances have changed.
 

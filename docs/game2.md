@@ -25,7 +25,7 @@ In Tic Tac Toe, a player has 9 different options for the first move. So, the vot
 ![](assets/Conditional_TokenGames-06.png)
 
 
-Everyone participating in the futarchy market would now decide the best move to win the overall game, by buying the correspondent outcome token in the market. Let's imagine the crowd decided to go for B2, i.e. the most highly valued outcome token was B2 at the specified market end time. The opponent player then chooses to claim square A3.
+Everyone participating in the futarchy market would now decide the best move to win the overall game, by buying the correspondent outcome token in the market. Let's imagine the crowd decided to go for B2, i.e. the most hily valued outcome token was B2 at the specified market end time. The opponent player then chooses to claim square A3.
 
 ![](assets/Conditional_Token_Games-04.png)
 
@@ -43,7 +43,7 @@ This game of a crowd-sourced Futarchy AI playing Tic Tac Toe is, of course, a ve
 
 ![](assets/Conditional_Token_Games-05.png)
 
-So why should we make such a simple game a bit more cumbersome? Putting futarchy to the test in gamified environments may be one way of rapid-prototyping how well futarchy works for gathering diverse opinions in limited timeframes, before moving on to more complex or high stake challenges. Just imagine, one day our little Futarchy AI may be facing the then-old [AlphaGo](https://deepmind.com/research/case-studies/alphago-the-story-so-far).
+So why should we make such a simple game a bit more cumbersome? Putting futarchy to the test in gamified environments may be one way of rapid-prototyping how well futarchy works for gathering diverse opinions in limited timeframes, before moving on to more complex or hi stake challenges. Just imagine, one day our little Futarchy AI may be facing the then-old [AlphaGo](https://deepmind.com/research/case-studies/alphago-the-story-so-far).
 
 *Let's see if we can beat it together!* 
 
