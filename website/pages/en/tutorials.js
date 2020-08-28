@@ -44,7 +44,7 @@ function Tutorial(props) {
             <p className="box-icons">
               <i className="icon icon-small icon-time"></i>
               &nbsp;
-              60-90 minutes
+              90min
               &nbsp;
               &nbsp;
               <i className="icon icon-small icon-star"></i>
