@@ -81,8 +81,8 @@ must be performed:
     <span style="color:#DB3A3D">`0x52ff54f0f5616e34a2d4f56fb68ab4cc636bf0d92111de74d1ec99040a8da118`</span>,
     or  <span style="color:#DB3A3D">`37540785828268254412066351790903087640191294994197155621611396915481249947928`</span>.
 
-	An <span style="color:#DB3A3D">`odd`</span> flag is set according to whether the highest bit of the hash
-	result is set. In this case, because the highest bit of the hashing
+	An <span style="color:#DB3A3D">`odd`</span> flag is set according to whether the hiest bit of the hash
+	result is set. In this case, because the hiest bit of the hashing
 	result is not set,<span style="color:#DB3A3D">`odd = false`</span>.
 
 2.  The x-coordinate gets incremented by one modulo the order of the
@@ -121,8 +121,8 @@ must be performed:
 
  4.  Note that the base field occupies 254 bits of space, meaning the
      x-coordinate we found also occupies 254 bits of space, and has
-     two free bits in an EVM word (256 bits). Leave the highest bit
-     unset, and set the next highest bit if <span style="color:#DB3A3D">`odd == true`</span>. In our
+     two free bits in an EVM word (256 bits). Leave the hiest bit
+     unset, and set the next hiest bit if <span style="color:#DB3A3D">`odd == true`</span>. In our
      example,<span style="color:#DB3A3D"> `odd`</span> is unset, so we're done, and the collection ID
      for <span style="color:#DB3A3D">`(A|B)`</span> is
      <span style="color:#DB3A3D">`15652542956428979189819946045645812551494983836899331958922359020836023739349`</span>,
@@ -142,7 +142,7 @@ following manner:
 1.  Decompress the constituent collection IDs into elliptic curve point
     coordinates. Take the low 254 bits as the x-coordinate, and pick the
     y-coordinate which is even or odd depending on the value of the
-    second highest bit.
+    second hiest bit.
 
       - <span style="color:#DB3A3D">`(A|B)`</span>, which has a collection ID of
         <span style="color:#DB3A3D">`0x229b067e142fce0aea84afb935095c6ecbea8647b8a013e795cc0ced3210a3d5`</span>,
@@ -172,7 +172,7 @@ following manner:
         4596536621806896659272941037410436605631447622293229168614769592376282983323)
 
 3.  Compress the result by taking the x-coordinate, and setting the
-    second highest bit, which should be just outside the x-coordinate,
+    second hiest bit, which should be just outside the x-coordinate,
     depending on whether the y-coordinate was odd. The combined
     collection ID for <span style="color:#DB3A3D">`(A|B)&(LO)`</span> is
     <span style="color:#DB3A3D">`0x6f722aa250221af2eba9868fc9d7d43994794177dd6fa7766e3e72ba3c111909`</span>.
