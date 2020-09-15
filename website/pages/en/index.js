@@ -85,7 +85,7 @@ The Conditional Tokens Framework allows you to:
 </ul>
 </p>
 <p>
-Prediction markets are the main use case for Conditional Tokens, Omen and Polimarket are two examples of projects built on the Conditional Tokens Framework. Conditional tokens have a wide range of additional use cases, from awarding access rights in games to paying milestone-based and social impact bonds. </p>
+Prediction markets are the main use case for Conditional Tokens, Omen and Polymarket are two examples of projects built on the Conditional Tokens Framework. Conditional tokens have a wide range of additional use cases, from awarding access rights in games to paying milestone-based and social impact bonds. </p>
 
           </div>
         </div>
