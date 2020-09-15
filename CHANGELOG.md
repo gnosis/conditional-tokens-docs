@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.5 (2020-09-15)
+
+* fix some type and formatting
+* Add merging positions
+* Add Combining Outcome Collections
+* Add splitting unions
+* Add splitting from collateral
+* Add positions
+* Add Introduction for Conditional Tokens Tutorial
+
 ## 1.1.4 (2020-07-21)
 
 *  Some minor edits as I read through the docs
