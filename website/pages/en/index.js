@@ -73,7 +73,7 @@ class HomeSplash extends React.Component {
             </h2>
           </div>
           <div>
-          <p>Conditional Tokens are a new, application-agnostic, asset class designed to facilitate the creation of hily liquid prediction markets. They enable combinatorial outcomes for hi resolution information discovery through prediction markets.</p>
+          <p>Conditional Tokens are a new, application-agnostic, asset class designed to facilitate the creation of highly liquid prediction markets. They enable combinatorial outcomes for high resolution information discovery through prediction markets.</p>
 <p>
 The Conditional Tokens Framework allows you to:
 </p>

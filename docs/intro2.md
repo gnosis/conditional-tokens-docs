@@ -27,7 +27,7 @@ Each participant begins in a neutral position, with a set of all outcome token f
 
 ### Key Takeaway
 
-This brings us to the central point of this section: trading conditional tokens is the same as predicting which outcome is more likely. Suppose a participant believes Yang will be elected. They may sell their “Trump is elected” tokens at whatever price the market will bear, and later redeem their “Yang is elected” tokens at “par” value when (and if) Yang is elected. Trading conditional tokens helps discover the price of different opinions in a neutral way, as hily probable outcomes trade close to their redeemable par value, and hily improbable outcomes naturally find their market price near zero.
+This brings us to the central point of this section: trading conditional tokens is the same as predicting which outcome is more likely. Suppose a participant believes Yang will be elected. They may sell their “Trump is elected” tokens at whatever price the market will bear, and later redeem their “Yang is elected” tokens at “par” value when (and if) Yang is elected. Trading conditional tokens helps discover the price of different opinions in a neutral way, as highly probable outcomes trade close to their redeemable par value, and highly improbable outcomes naturally find their market price near zero.
 
 Readers will notice that, implicitly, there are two ways to enter a prediction market. One way is to buy a conditional token from another participant. Another way is to collateralize the issuance of new tokens (all outcomes) and divest of the unwanted outcomes. That is, sell the outcomes one thinks are overpriced.
 
@@ -36,6 +36,6 @@ The supply and demand—buyers and sellers —of “Yang is elected” and “Tr
 
 ## Other possible use cases
 
-Conditional tokens are built on the ERC-1155 token standard, which  affords numerous advantages for their multiple use cases. For instance, ERC-1155 batch sends substantially decrease gas costs for users, making them ideal within gaming environments that encompass different tokens and hi-velocity economies.
+Conditional tokens are built on the ERC-1155 token standard, which  affords numerous advantages for their multiple use cases. For instance, ERC-1155 batch sends substantially decrease gas costs for users, making them ideal within gaming environments that encompass different tokens and high-velocity economies.
 
 The <a href="/use-case">use case</a> section explores how the conditional token standard can be used to improve existing decentralized applications (dapps). In the tutorials section, you’ll find the tools and know-how needed to set up, inspect, and apply the conditional tokens framework to your own projects—as well as some inspiration regarding other use cases for this new standard beyond prediction markets.
