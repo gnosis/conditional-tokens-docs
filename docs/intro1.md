@@ -12,7 +12,7 @@ To better understand the reasoning behind the development of the conditional tok
 
 Prediction markets have far-reaching potential as a prognostic tool. From weather forecasting to abating the destruction of the Great Barrier Reef, learn more about the vast range of use cases for PMs by delving into our blog posts on the topic.
 
-Simple prediction markets, including our first contracts and also other known decentralized prediction market platforms such as Augur, lack sufficient infrastructure to support deeper combinatorial markets. These more complex markets provide an invaluable means by which to achieve hier resolution information discovery in respect to conditional and interdependent probabilities of future events and their perceived value.
+Simple prediction markets, including our first contracts and also other known decentralized prediction market platforms such as Augur, lack sufficient infrastructure to support deeper combinatorial markets. These more complex markets provide an invaluable means by which to achieve higher resolution information discovery in respect to conditional and interdependent probabilities of future events and their perceived value.
 In the following section, we will analyze the setup of known prediction markets and their shortcomings, before outlining how combinatorial markets with conditional tokens can solve current deficits. 
 
 ## Existing Approach to Combinatorial Markets

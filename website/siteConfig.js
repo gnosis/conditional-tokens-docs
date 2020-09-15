@@ -78,8 +78,8 @@ const siteConfig = {
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Gnosis LTD`,
 
-  hilight: {
-    // hilight.js theme to use for syntax hilighting in code blocks.
+  highlight: {
+    // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: 'default',
   },
 
