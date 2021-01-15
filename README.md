@@ -1,21 +1,4 @@
-# Gnosis Docs
+# Conditional Tokens Explorer And Factory documentation
 
-What are these docs about...
-
-## Installation
-> You have to be on Node >= 8.x and Yarn >= 1.5.
-
-```sh
-yarn i
-````
-
-## Run website
-
-```sh
-cd website
-yarn start
-```
-
-## More info
-
-Look under [website folder](website/README.md) or [Docusauros Official Docs](https://docusaurus.io/docs/en/site-creation)
+Here you can learn everything you need to know to start using the application: 
+https://github.com/gnosis/conditional-tokens-explorer/blob/develop/docs/CTE_project_documentation.pdf
