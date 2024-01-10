@@ -18,9 +18,6 @@ jobs:
   deploy:
     name: Deployment
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./website
 
     steps:
       - name: Cancel Previous Runs
@@ -46,6 +43,7 @@ jobs:
         uses: actions/setup-node@v2
 
       - name: Install
+        working-directory: ./website
         run: |
           rm -rf .cache
           rm -rf build
@@ -54,6 +52,7 @@ jobs:
           pip install awscli --upgrade --user
 
       - name: Build App
+        working-directory: ./website
         run: yarn build
 
       - name: Configure AWS Development credentials
@@ -74,6 +73,7 @@ jobs:
 
       # Script to deploy to development environment
       - name: 'Deploy to S3: Development'
+        working-directory: ./website
         if: github.ref == 'refs/heads/dev'
         run: |
           aws s3 sync build/ s3://${{ secrets.DEV_BUCKET_NAME }}/dev --exclude "*.html" --cache-control max-age=0,no-cache,no-store,public
@@ -81,6 +81,7 @@ jobs:
 
       # Script to deploy to staging environment
       - name: 'Deploy to S3: Staging'
+        working-directory: ./website
         if: github.ref == 'refs/heads/main'
         run: |
           aws s3 sync build/ s3://${{ secrets.DEV_BUCKET_NAME }}/staging --exclude "*.html" --cache-control max-age=0,no-cache,no-store,public
@@ -88,6 +89,7 @@ jobs:
 
       # Script to deploy to release environment
       - name: 'Deploy to S3: Release'
+        working-directory: ./website
         if: github.ref == 'refs/heads/release'
         run: |
           aws s3 sync build/ s3://${{ secrets.RELEASE_BUCKET_NAME }} --delete --exclude "*.html" --exclude "sitemap.xml" --cache-control max-age=86400,public
