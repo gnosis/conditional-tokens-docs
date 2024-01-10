@@ -77,22 +77,22 @@ jobs:
         working-directory: ./website
         if: github.ref == 'refs/heads/dev'
         run: |
-          aws s3 sync build/ s3://${{ secrets.DEV_BUCKET_NAME }}/dev --exclude "*.html" --cache-control max-age=0,no-cache,no-store,public
-          aws s3 sync build/ s3://${{ secrets.DEV_BUCKET_NAME }}/dev --exclude "*" --include "*.html" --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html
+          aws s3 sync build/gnosis-docs s3://${{ secrets.DEV_BUCKET_NAME }}/dev/conditionaltokens --exclude "*.html" --cache-control max-age=0,no-cache,no-store,public
+          aws s3 sync build/gnosis-docs s3://${{ secrets.DEV_BUCKET_NAME }}/dev --exclude "*" --include "*.html" --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html
 
       # Script to deploy to staging environment
       - name: 'Deploy to S3: Staging'
         working-directory: ./website
         if: github.ref == 'refs/heads/main'
         run: |
-          aws s3 sync build/ s3://${{ secrets.DEV_BUCKET_NAME }}/staging --exclude "*.html" --cache-control max-age=0,no-cache,no-store,public
-          aws s3 sync build/ s3://${{ secrets.DEV_BUCKET_NAME }}/staging --exclude "*" --include "*.html" --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html
+          aws s3 sync build/gnosis-docs s3://${{ secrets.DEV_BUCKET_NAME }}/staging/conditionaltokens --exclude "*.html" --cache-control max-age=0,no-cache,no-store,public
+          aws s3 sync build/gnosis-docs s3://${{ secrets.DEV_BUCKET_NAME }}/staging/conditionaltokens --exclude "*" --include "*.html" --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html
 
       # Script to deploy to release environment
       - name: 'Deploy to S3: Release'
         working-directory: ./website
         if: startsWith(github.event.ref, 'refs/tags/v') || github.event_name == 'release'
         run: |
-          aws s3 sync build/ s3://${{ secrets.RELEASE_BUCKET_NAME }} --delete --exclude "*.html" --exclude "sitemap.xml" --cache-control max-age=86400,public
-          aws s3 sync build/ s3://${{ secrets.RELEASE_BUCKET_NAME }} --delete --exclude "*" --include "*.html" --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html
-          aws s3 sync build/ s3://${{ secrets.RELEASE_BUCKET_NAME }} --delete --exclude "*" --include "sitemap.xml" --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/xml
+          aws s3 sync build/gnosis-docs s3://${{ secrets.RELEASE_BUCKET_NAME }}/conditionaltokens --delete --exclude "*.html" --exclude "sitemap.xml" --cache-control max-age=86400,public
+          aws s3 sync build/gnosis-docs s3://${{ secrets.RELEASE_BUCKET_NAME }}/conditionaltokens --delete --exclude "*" --include "*.html" --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/html
+          aws s3 sync build/gnosis-docs s3://${{ secrets.RELEASE_BUCKET_NAME }}/conditionaltokens --delete --exclude "*" --include "sitemap.xml" --cache-control max-age=0,no-cache,no-store,must-revalidate --content-type text/xml
